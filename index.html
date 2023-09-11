@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин гаджетов для гиков "Девайс"</title>
-    <link href="styles/styles.css" rel="stylsheet">
+    <link href="styles/styles.css" rel="stylesheet">
   </head>
 
   <body>
@@ -179,28 +179,52 @@
         <h2 class="visually-hidden">Каталог</h2>
         <ul class="category-list">
           <li class="category-item">
-            <img src="images/category-catalog/vr.svg" width="160" height="253" alt="Виртуальная реальность">
-            <a href="#">Виртуальная реальность</a>
+            <a href="#">
+              <div>
+                <img src="images/category-catalog/vr.svg" width="160" height="253" alt="Виртуальная реальность">
+              </div>
+              <span>Виртуальная реальность</span>
+            </a>
           </li>
           <li class="category-item">
-            <img src="images/category-catalog/monopods.svg" width="160" height="253" alt="Моноподы для селфи">
-            <a href="catalog_monopods.html">Моноподы для селфи</a>
+            <a href="catalog_monopods.html">
+              <div>
+                <img src="images/category-catalog/monopods.svg" width="160" height="253" alt="Моноподы для селфи">
+              </div>
+              <span>Моноподы для селфи</span>
+            </a>
           </li>
           <li class="category-item">
-            <img src="images/category-catalog/helmet_cams.svg" width="160" height="253" alt="Экшн-камеры">
-            <a href="#">Экшн-камеры</a>
+            <a href="#">
+              <div>
+                <img src="images/category-catalog/helmet_cams.svg" width="160" height="253" alt="Экшн-камеры">
+              </div>
+              <span>Экшн-камеры</span>
+            </a>
           </li>
           <li class="category-item">
-            <img src="images/category-catalog/fitbit.svg" width="160" height="253" alt="Фитнес-браслеты">
-            <a href="#">Фитнес-браслеты</a>
+            <a href="#">
+              <div>
+                <img src="images/category-catalog/fitbit.svg" width="160" height="253" alt="Фитнес-браслеты">
+              </div>
+              <span>Фитнес-браслеты</span>
+            </a>
           </li>
           <li class="category-item">
-            <img src="images/category-catalog/smartwatch.svg" width="160" height="253" lt="Умные часы">
-            <a href="#">Умные часы</a>
+            <a href="#">
+              <div>
+                <img src="images/category-catalog/smartwatch.svg" width="160" height="253" alt="Умные часы">
+              </div>
+              <span>Умные часы</span>
+            </a>
           </li>
           <li class="category-item">
-            <img src="images/category-catalog/quadcopters.svg" width="160" height="253" alt="Квадрокоптеры">
-            <a href="#">Квадрокоптеры</a>
+            <a href="#">
+              <div>
+                <img src="images/category-catalog/quadcopters.svg" width="160" height="253" alt="Квадрокоптеры">
+              </div>
+              <span>Квадрокоптеры</span>
+            </a>
           </li>
         </ul>
       </section>
@@ -239,8 +263,10 @@
       <!--ТОВАРЫ ПОД ЗАКАЗ-->
       <section class="delivery-rare">
         <h2 class="visually-hidden">Заказ редкого товара</h2>
-        <img src="images/truck.svg" width="125" height="100" alt="кнопка заказа редкого товара">
-        <a class="delivery-rare-button" href="#">Доставим редкий товар под заказ</a>
+        <a class="delivery-rare-button" href="#">
+          <img src="images/truck.svg" width="125" height="100" alt="кнопка заказа редкого товара">
+          <span>Доставим редкий товар под заказ</span>
+        </a>
       </section>
       <!--О НАС КОНТАКТЫ-->
       <section class="about">
@@ -261,7 +287,7 @@
           <p>Вы можете забрать товар сами, заехав в наш офис.<br>
             Заодно сможете проверить работоспособность покупки.
           </p>
-          <div>
+          <div class="contacts">
             <h3 class="contacts-title">Интернет-магазин «Девайс»</h3>
             <span>Санкт-Петербург, набережная реки Карповки, 5, литера П.<br>
               +7 (812) 812-12-12
@@ -285,6 +311,7 @@
           <input type="text" name="e-mail" placeholder="Ваш e-mail">
           <button type="submit">Подписаться</button>
         </form>
+        <span>Это бесплатно</span>
       </section>
     </main>
     <footer class="main-footer">
