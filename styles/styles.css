@@ -1,0 +1,282 @@
+/* Raleway */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url(../fonts/raleway/raleway-800.woff2);
+  font-display: swap;
+}
+
+/* Rubik */
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/rubik/rubik-400.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/rubik/rubik-700.woff2);
+  font-display: swap;
+}
+
+/* Body */
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444;
+  background-color: #FFF;
+}
+
+/* Pages */
+/* HEADER*/
+.main-header {
+  color: #000;
+  background-color: #FFE17F;
+}
+
+/* навигация */
+.navigation-link {
+  color: #000;
+}
+
+.navigatiton-toggler-item,
+.navigation-service-link {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+.navigation-toggler-link {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/* MAIN */
+/* слайдер */
+.main-slider {
+  color: #000;
+}
+
+.main-slider-number {
+  font-size: 180px;
+  color: #FFF;
+  background-color: #FFE17F;
+  font-weight: 700;
+  text-align: right;
+}
+
+.slider-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+}
+
+.main-slider-description p {
+  color: #444;
+}
+
+.main-slider-table tr:nth-of-type(1) {
+  font-size: 36px;
+}
+
+.main-slider-table tr:nth-of-type(2) {
+  font-size: 16px;
+  color: #444;
+}
+
+/* каталог */
+.category-item div {
+  background-color: #FFE17F;
+}
+
+.category-item span {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.36px;
+}
+
+/* услуги */
+.services {
+  background-color: #F0F0F0;
+}
+
+.services-description-item h3 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+}
+
+/* товары под заказ*/
+.delivery-rare {
+    background-color: #F0F0F0;
+}
+
+.delivery-rare img {
+  background-color: #FFE17F;
+}
+
+.delivery-rare span {
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+/* о нас контакты */
+.about-title {
+  font-family: "Raleway";
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.about-us p,
+.about-title p {
+  color: #444;
+}
+
+.about-transport li {
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.36px;
+}
+
+.contacts-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.contacts span {
+  color: #444;
+}
+
+/* подписка */
+.subscription {
+  background-color: #F0F0F0;
+}
+
+.subscription-title {
+  font-family: "Raleway";
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.subscription p {
+  color: #444;
+}
+
+.subscription span {
+  color: #444;
+}
+
+/* FOOTER */
+.main-footer {
+  color: #FFF;
+  background-color: #444;
+}
+
+.footer-service-link {
+  font-family: "Raleway";
+  font-size: 18px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+.main-footer p {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* СТРАНИЦЫ КАТАЛОГА */
+.main-catalog {
+  background-color: #F0F0F0;
+}
+/* заголовок страницы и хлебные крошки*/
+.catalog-header {
+  background-color: #FFF;
+}
+
+.main-catalog-title {
+  font-family: "Raleway";
+  color: #000;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  color: #000;
+  line-height: 20px;
+}
+
+/* каталог */
+.catalog-products {
+  background-color: #FFF;
+}
+/* фильтр каталога*/
+.catalog-filter {
+  background-color: #F0F0F0;
+}
+
+.catalog-title {
+  font-family: "Raleway";
+  color: #000;
+  font-size: 16px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  line-height: 20px;
+  color: #000;
+}
+
+.control-input {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+}
+
+/* сортировка каталога */
+.catalog-sort {
+  background-color: #F0F0F0;
+}
+
+.sort-link {
+  color: #000;
+}
+
+/* карточки каталога */
+.product-list {
+  background-color: #FFF;
+}
+
+.product-card-title {
+  font-weight: 700;
+line-height: 20px;
+letter-spacing: -0.36px;
+color: #000;
+}
+
+.product-card-price {
+color: #444;
+}
+
+/* пагинация каталога*/
+.catalog-pagination {
+  background-color: #EBEBEB;
+}

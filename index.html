@@ -4,19 +4,18 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин гаджетов для гиков "Девайс"</title>
-    <link href="styles/styles.css" rel="stylsheet">
+    <link href="styles/styles.css" rel="stylesheet">
   </head>
 
   <body>
     <header class="main-header">
       <a class="logo" href="">
-        <img src="images/logo/logo.svg" alt="Логотип">
+        <img src="images/logo/logo.svg" width="145" height="36" alt="Логотип">
       </a>
       <!--НАВИГАЦИЯ-->
       <nav class="main-navigation">
         <div class="navigation-menu-one">
           <form action="#" method="get">
-            <!--+ Иконка-->
             <input type="search" placeholder="Поиск по сайту" name="serch">
             <button type="submit">Найти</button>
           </form>
@@ -30,6 +29,7 @@
               <a class="navigation-link" href="#">Сравнить</a>
             </li>
             <li class="navigation-item">
+              <span class="navigation-basket-number">2</span>
               <a class="navigation-link" href="#">Корзина</a>
             </li>
           </ul>
@@ -38,7 +38,7 @@
           <!--Выпадающее меню-->
           <div class="navigation-catalog-toggler">
             <span class="navigatiton-toggler-item">Каталог товаров</span>
-            <img src="images/plus.svg" alt="Кнопка раскрытия меню">
+            <img src="images/plus.svg" width="16" height="16" alt="Кнопка раскрытия меню">
             <ul>
               <li>
                 <a class="navigation-toggler-link" href="#">Виртуальная реальность</a>
@@ -80,18 +80,18 @@
       <!--СЛАЙДЕР-->
       <section class="main-slider">
         <h2 class="visually-hidden">Слайдер</h2>
+        <!--Переключение слайда-->
+        <button class="slider-button slider-prev" type="button">
+          <img src="images/slider/arrow_left.svg" width="20" height="60" alt="Предыдущее фото">
+        </button>
+        <button class="slider-button slider-next" type="button">
+          <img src="images/slider/arrow_right.svg" width="20" height="60" alt="Следующее фото">
+        </button>
         <ul class="main-slider-list">
           <!--Первый слайд-->
           <li class="main-slider-item">
             <span class="main-slider-number">01</span>
-            <img src="images/slider/slider-1.png" alt="квадрокоптер">
-            <!--Переключение слайда-->
-            <button class="slider-button slider-prev" type="button">
-              <img src="images/slider/arrow_left.svg" alt="Предыдущее фото">
-            </button>
-            <button class="slider-button slider-next" type="button">
-              <img src="images/slider/arrow_right.svg" alt="Следующее фото">
-            </button>
+            <img src="images/slider/slider-1.png" width="560" height="560" alt="квадрокоптер">
             <!--Описание слайда-->
             <div class="main-slider-description">
               <h2 class="slider-title">Порхает как бабочка, жалит как пчела!</h2>
@@ -113,14 +113,7 @@
           <!--Второй слайд-->
           <li class="main-slider-item">
             <span class="main-slider-number">02</span>
-            <img src="images/slider/slider-2.png" alt="фитнес-браслет">
-            <!--Переключение слайда-->
-            <button class="slider-button slider-prev" type="button">
-              <img src="images/slider/arrow_left.svg" alt="Предыдущее фото">
-            </button>
-            <button class="slider-button slider-next" type="button">
-              <img src="images/slider/arrow_right.svg" alt="Следующее фото">
-            </button>
+            <img src="images/slider/slider-2.png" width="560" height="560" alt="фитнес-браслет">
             <!--Описание слайда-->
             <div class="main-slider-description">
               <h2 class="slider-title">Худеем правильно!</h2>
@@ -139,14 +132,7 @@
           <!--Третий слайд-->
           <li class="main-slider-item">
             <span class="main-slider-number">03</span>
-            <img src="images/slider/slider-3.png" alt="палка для селфи">
-            <!--Переключение слайда-->
-            <button class="slider-button slider-prev" type="button">
-              <img src="images/slider/arrow_left.svg" alt="Предыдущее фото">
-            </button>
-            <button class="slider-button slider-next" type="button">
-              <img src="images/slider/arrow_right.svg" alt="Следующее фото">
-            </button>
+            <img src="images/slider/slider-3.png" width="560" height="560" alt="палка для селфи">
             <!--Описание слайда-->
             <div class="main-slider-description">
               <h2 class="slider-title">Делай селфи, как Бен Стиллер! </h2>
@@ -193,28 +179,52 @@
         <h2 class="visually-hidden">Каталог</h2>
         <ul class="category-list">
           <li class="category-item">
-            <img src="images/category-catalog/vr.svg" alt="Виртуальная реальность">
-            <a href="#">Виртуальная реальность</a>
+            <a href="#">
+              <div>
+                <img src="images/category-catalog/vr.svg" width="160" height="253" alt="Виртуальная реальность">
+              </div>
+              <span>Виртуальная реальность</span>
+            </a>
           </li>
           <li class="category-item">
-            <img src="images/category-catalog/monopods.svg" alt="Моноподы для селфи">
-            <a href="catalog_monopods.html">Моноподы для селфи</a>
+            <a href="catalog_monopods.html">
+              <div>
+                <img src="images/category-catalog/monopods.svg" width="160" height="253" alt="Моноподы для селфи">
+              </div>
+              <span>Моноподы для селфи</span>
+            </a>
           </li>
           <li class="category-item">
-            <img src="images/category-catalog/helmet_cams.svg" alt="Экшн-камеры">
-            <a href="#">Экшн-камеры</a>
+            <a href="#">
+              <div>
+                <img src="images/category-catalog/helmet_cams.svg" width="160" height="253" alt="Экшн-камеры">
+              </div>
+              <span>Экшн-камеры</span>
+            </a>
           </li>
           <li class="category-item">
-            <img src="images/category-catalog/fitbit.svg" alt="Фитнес-браслеты">
-            <a href="#">Фитнес-браслеты</a>
+            <a href="#">
+              <div>
+                <img src="images/category-catalog/fitbit.svg" width="160" height="253" alt="Фитнес-браслеты">
+              </div>
+              <span>Фитнес-браслеты</span>
+            </a>
           </li>
           <li class="category-item">
-            <img src="images/category-catalog/smartwatch.svg" alt="Умные часы">
-            <a href="#">Умные часы</a>
+            <a href="#">
+              <div>
+                <img src="images/category-catalog/smartwatch.svg" width="160" height="253" alt="Умные часы">
+              </div>
+              <span>Умные часы</span>
+            </a>
           </li>
           <li class="category-item">
-            <img src="images/category-catalog/quadcopters.svg" alt="Квадрокоптеры">
-            <a href="#">Квадрокоптеры</a>
+            <a href="#">
+              <div>
+                <img src="images/category-catalog/quadcopters.svg" width="160" height="253" alt="Квадрокоптеры">
+              </div>
+              <span>Квадрокоптеры</span>
+            </a>
           </li>
         </ul>
       </section>
@@ -253,8 +263,10 @@
       <!--ТОВАРЫ ПОД ЗАКАЗ-->
       <section class="delivery-rare">
         <h2 class="visually-hidden">Заказ редкого товара</h2>
-        <img src="images/truck.svg" alt="кнопка заказа редкого товара">
-        <a class="delivery-rare-button" href="#">Доставим редкий товар под заказ</a>
+        <a class="delivery-rare-button" href="#">
+          <img src="images/truck.svg" width="125" height="100" alt="кнопка заказа редкого товара">
+          <span>Доставим редкий товар под заказ</span>
+        </a>
       </section>
       <!--О НАС КОНТАКТЫ-->
       <section class="about">
@@ -275,7 +287,7 @@
           <p>Вы можете забрать товар сами, заехав в наш офис.<br>
             Заодно сможете проверить работоспособность покупки.
           </p>
-          <div>
+          <div class="contacts">
             <h3 class="contacts-title">Интернет-магазин «Девайс»</h3>
             <span>Санкт-Петербург, набережная реки Карповки, 5, литера П.<br>
               +7 (812) 812-12-12
@@ -299,11 +311,12 @@
           <input type="text" name="e-mail" placeholder="Ваш e-mail">
           <button type="submit">Подписаться</button>
         </form>
+        <span>Это бесплатно</span>
       </section>
     </main>
     <footer class="main-footer">
       <a class="logo" href="#">
-        <img src="images/logo/logo2.svg" alt="Логотип компании">
+        <img src="images/logo/logo2.svg" width="145" height="36" alt="Логотип компании">
       </a>
       <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       <!--Сервисное меню-->
@@ -322,22 +335,22 @@
       <ul class="media">
         <li>
           <a href="https://t.me/htmlacademy">
-            <img src="images/icons_social/icons_telegram.svg" alt="Телеграмм">
+            <img src="images/icons_social/icons_telegram.svg" width="40" height="40" alt="Телеграмм">
           </a>
         </li>
         <li>
           <a href="https://www.youtube.com/user/htmlacademyru">
-            <img src="images/icons_social/icons_youtube.svg" alt="Ютуб">
+            <img src="images/icons_social/icons_youtube.svg" width="16" height="11" alt="Ютуб">
           </a>
         </li>
         <li>
           <a href="https://twitter.com/htmlacademy_ru">
-            <img src="images/icons_social/icons_twitter.svg" alt="Твитер">
+            <img src="images/icons_social/icons_twitter.svg" width="14" height="12" alt="Твитер">
           </a>
         </li>
       </ul>
       <a href="https://htmlacademy.ru">
-        <img src="images/logo/html_academy.svg" alt="переход на сайт .html academy">
+        <img src="images/logo/html_academy.svg" width="115" height="33" alt="переход на сайт .html academy">
       </a>
     </footer>
   </body>
