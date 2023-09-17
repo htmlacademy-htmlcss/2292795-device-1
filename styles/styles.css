@@ -36,6 +36,11 @@ body {
 
 /* Pages */
 /* HEADER*/
+.conteiner-header {
+  margin: 0 auto;
+  width: 960px;
+}
+
 .main-header {
   color: #000;
   background-color: #FFE17F;
@@ -63,6 +68,16 @@ body {
 }
 
 /* MAIN */
+.conteiner-slider {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.conteiner-main {
+  margin: 0 auto;
+  width: 960px;
+}
+
 /* слайдер */
 .main-slider {
   color: #000;
@@ -121,7 +136,7 @@ body {
 
 /* товары под заказ*/
 .delivery-rare {
-    background-color: #F0F0F0;
+  background-color: #F0F0F0;
 }
 
 .delivery-rare img {
@@ -136,6 +151,7 @@ body {
   letter-spacing: 4px;
   text-transform: uppercase;
 }
+
 /* о нас контакты */
 .about-title {
   font-family: "Raleway";
@@ -183,6 +199,11 @@ body {
 }
 
 /* FOOTER */
+.conteiner-footer {
+  margin: 0 auto;
+  width: 960px;
+}
+
 .main-footer {
   color: #FFF;
   background-color: #444;
@@ -204,6 +225,7 @@ body {
 .main-catalog {
   background-color: #F0F0F0;
 }
+
 /* заголовок страницы и хлебные крошки*/
 .catalog-header {
   background-color: #FFF;
@@ -226,6 +248,7 @@ body {
 .catalog-products {
   background-color: #FFF;
 }
+
 /* фильтр каталога*/
 .catalog-filter {
   background-color: #F0F0F0;
@@ -267,13 +290,13 @@ body {
 
 .product-card-title {
   font-weight: 700;
-line-height: 20px;
-letter-spacing: -0.36px;
-color: #000;
+  line-height: 20px;
+  letter-spacing: -0.36px;
+  color: #000;
 }
 
 .product-card-price {
-color: #444;
+  color: #444;
 }
 
 /* пагинация каталога*/
