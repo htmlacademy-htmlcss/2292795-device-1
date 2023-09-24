@@ -42,21 +42,92 @@ body {
   background-color: #FFF;
 }
 
-/* Pages */
-/* HEADER*/
-.conteiner-header {
-  flex-grow: 1;
-  margin: 0 auto;
-  width: 960px;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.main-header {
-  flex-grow: 1;
-  color: #000;
+/* Pages */
+
+/* HEADER*/
+.conteiner-header {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 1160px;
   background-color: #FFE17F;
 }
 
+.main-header {
+  color: #000;
+  background-color: #FFF;
+}
+
+/* логотип */
+.logo {
+  margin: 0;
+  padding-left: 60px;
+}
+
 /* навигация */
+.main-navigation {
+  background-color: #FFE17F;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 5px 60px 0;
+}
+
+.navigation-menu-one {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-menu-two {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-catalog-toggler {
+  margin: 0;
+  padding: 0;
+  width: 293px;
+}
+
+.navigation-user-login {
+  margin: 0;
+  padding: 0;
+  width: 231px;
+}
+
+.navigation-user-menu {
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  width: 240px;
+}
+
+.navigation-toggler-menu {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-service-menu {
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  width: 471px;
+}
+
 .navigation-link {
   color: #000;
 }
@@ -78,19 +149,56 @@ body {
 }
 
 /* MAIN */
+.main-index {
+  flex-grow: 1;
+}
+
 .conteiner-slider {
   margin: 0 auto;
-  width: 960px;
+  width: 1160px;
 }
 
 .conteiner-main {
   margin: 0 auto;
-  width: 960px;
+  width: 1160px;
 }
 
 /* слайдер */
 .main-slider {
   color: #000;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+/* переключение слайдера*/
+.main-slider-button {
+  display: flex;
+  width: 530px;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+/* слайды */
+.main-slider-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.main-slider-item {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-pagination {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+
 }
 
 .main-slider-number {
@@ -99,7 +207,18 @@ body {
   background-color: #FFE17F;
   font-weight: 700;
   text-align: right;
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  height: 135px;
 }
+
+.main-slider-description {
+  margin: 0;
+  padding: 0;
+  width: 560px;
+}
+
 
 .slider-title {
   font-family: "Raleway", sans-serif;
@@ -122,11 +241,31 @@ body {
 }
 
 /* каталог */
-.category-item div {
+.category-catalog {
+  margin: 0;
+  margin-top: 70px;
+  padding: 0;
+  width: 1160px;
+}
+
+.category-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.category-item {
+  margin: 0;
+  padding: 0;
+  width: 160px;
+}
+
+.categori-item-img {
   background-color: #FFE17F;
 }
 
-.category-item span {
+.categori-item-span {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -135,7 +274,25 @@ body {
 
 /* услуги */
 .services {
+  display: flex;
+  margin: 0;
+  margin-top: 70px;
+  padding: 0;
+  width: 1160px;
   background-color: #F0F0F0;
+  justify-content: space-between;
+}
+
+.services-list {
+  margin: 0;
+  padding: 0;
+  width: 280px;
+}
+
+.services-description {
+  margin: 0;
+  padding: 0;
+  width: 764px;
 }
 
 .services-description-item h3 {
@@ -146,6 +303,11 @@ body {
 
 /* товары под заказ*/
 .delivery-rare {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 70px;
+  padding: 0;
+  width: 1160px;
   background-color: #F0F0F0;
 }
 
@@ -153,7 +315,7 @@ body {
   background-color: #FFE17F;
 }
 
-.delivery-rare span {
+.delivery-rare-text {
   text-align: center;
   font-family: "Raleway";
   font-size: 20px;
@@ -163,14 +325,34 @@ body {
 }
 
 /* о нас контакты */
+.about {
+  display: flex;
+  margin: 0;
+  margin-top: 70px;
+  padding: 0;
+  width: 1160px;
+  justify-content: space-between;
+}
+
+.about-us {
+  margin: 0;
+  padding: 0;
+  width: 526px;
+}
+
+.about-contacts {
+  margin: 0;
+  padding: 0;
+  width: 526px;
+}
+
 .about-title {
   font-family: "Raleway";
   font-size: 50px;
   line-height: 50px;
 }
 
-.about-us p,
-.about-title p {
+.about-us-text {
   color: #444;
 }
 
@@ -185,59 +367,118 @@ body {
   font-weight: 700;
 }
 
-.contacts span {
+.about-us-contacts {
   color: #444;
 }
 
 /* подписка */
 .subscription {
+  display: flex;
+  margin: 0;
+  margin-top: 70px;
+  padding: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
   background-color: #F0F0F0;
 }
 
 .subscription-title {
+  margin: 0;
+  padding: 0;
   font-family: "Raleway";
   font-size: 50px;
   line-height: 50px;
+  width: 348px;
 }
 
-.subscription p {
+.subscription-text {
+  margin: 0;
+  padding: 0;
+  width: 560px;
   color: #444;
+
 }
 
-.subscription span {
+.subscription-span {
+  margin: 0;
+  padding: 0;
+  width: 128px;
   color: #444;
 }
 
 /* FOOTER */
-.conteiner-footer {
-  margin: 0 auto;
-  width: 960px;
-}
-
 .main-footer {
   color: #FFF;
   background-color: #444;
 }
 
+.conteiner-footer {
+  margin: 0 auto;
+  width: 1160px;
+}
+
+.logo-footer {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+
+.footer-menu-one {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.footer-menu-two {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
 .footer-service-link {
+  margin: 0;
+  padding: 0;
   font-family: "Raleway";
   font-size: 18px;
   letter-spacing: 3.6px;
   text-transform: uppercase;
 }
 
-.main-footer p {
+.footer-menu-text {
   font-size: 16px;
   line-height: 20px;
+  width: 234px;
 }
 
 /* СТРАНИЦЫ КАТАЛОГА */
-.main-catalog {
-  background-color: #F0F0F0;
+/* заголовок страницы и хлебные крошки*/
+.catalog-main-header {
+  color: #000;
+  background-color: #FFF;
 }
 
-/* заголовок страницы и хлебные крошки*/
-.catalog-header {
+.conteiner-main-header {
+  margin: 0 auto;
+  width: 1160px;
+  background-color: #FFF;
+}
+
+.catalog-breadcrumbs {
+  display: flex;
+  flex-direction: column;
+  width: 1079px;
+  margin: 0 auto;
+  margin-top: 35px;
+  padding: 0;
   background-color: #FFF;
 }
 
@@ -246,25 +487,65 @@ body {
   color: #000;
   font-size: 50px;
   line-height: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs {
+  margin: 0;
+  margin-top: 16px;
+  padding: 0;
 }
 
 .breadcrumbs-link {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   color: #000;
   line-height: 20px;
 }
 
 /* каталог */
+.main-catalog {
+  flex-grow: 1;
+  background-color: #F0F0F0;
+}
+
+.conteiner-catalog-main {
+  margin: 0 auto;
+  width: 1160px;
+}
+
 .catalog-products {
-  background-color: #FFF;
+  display: flex;
+  margin: 0;
+  margin-top: 35px;
+  padding: 0;
+  width: 1160px;
+  justify-content: space-between;
+
 }
 
 /* фильтр каталога*/
 .catalog-filter {
-  background-color: #F0F0F0;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+  width: 320px;
+}
+
+.catalog-chapter {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 760px;
 }
 
 .catalog-title {
+  margin: 0;
+  padding: 0;
   font-family: "Raleway";
   color: #000;
   font-size: 16px;
@@ -286,19 +567,29 @@ body {
 
 /* сортировка каталога */
 .catalog-sort {
+  display: flex;
+  margin: 0;
+  padding: 0;
   background-color: #F0F0F0;
 }
 
 .sort-link {
+  display: flex;
+  margin: 0;
+  padding: 0;
   color: #000;
 }
 
 /* карточки каталога */
 .product-list {
+  margin: 0;
+  padding: 0;
   background-color: #FFF;
 }
 
 .product-card-title {
+  margin: 0;
+  padding: 0;
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.36px;
@@ -306,10 +597,20 @@ body {
 }
 
 .product-card-price {
+  margin: 0;
+  padding: 0;
   color: #444;
 }
 
 /* пагинация каталога*/
+.catalog-pagination-more {
+  margin: 0;
+  padding: 0;
+  background-color: #FFF;
+}
+
 .catalog-pagination {
-  background-color: #EBEBEB;
+  margin: 0;
+  padding: 0;
+  background-color: #FFF;
 }
