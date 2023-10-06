@@ -28,6 +28,12 @@ html {
   height: 100%;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 /* Body */
 body {
   margin: 0;
@@ -58,21 +64,25 @@ body {
 /* Pages */
 
 /* HEADER*/
-.conteiner-header {
-  margin: 0 auto;
-  margin-top: 40px;
-  width: 1160px;
-  background-color: #FFE17F;
-}
-
 .main-header {
   color: #000;
   background-color: #FFF;
 }
 
+.conteiner-header {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 1160px;
+  height: 300px;
+  background-color: #FFE17F;
+}
+
+
 /* логотип */
 .logo {
+  display: block;
   margin: 0;
+  margin-bottom: 30px;
   padding-left: 60px;
 }
 
@@ -88,48 +98,84 @@ body {
 .navigation-menu-one {
   display: flex;
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
+  align-items: center;
 }
 
 .navigation-menu-two {
-  display: flex;
+  display: grid;
+  grid-template-columns: 293px 1fr;
+  column-gap: 276px;
   margin: 0;
   padding: 0;
 }
 
 .navigation-catalog-toggler {
+  display: flex;
   margin: 0;
   padding: 0;
   width: 293px;
+  min-height: 50px;
+  align-items: center;
 }
 
 .navigation-user-login {
+  list-style-type: none;
   margin: 0;
   padding: 0;
   width: 231px;
 }
 
 .navigation-user-menu {
+  list-style-type: none;
+  display: flex;
   margin: 0;
   margin-left: auto;
   padding: 0;
   width: 240px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
 }
 
 .navigation-toggler-menu {
+  list-style-type: none;
+  display: none;
   margin: 0;
   padding: 0;
 }
 
 .navigation-service-menu {
+  list-style-type: none;
+  display: flex;
   margin: 0;
   margin-left: auto;
   padding: 0;
   width: 471px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navigation-item {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  min-width: 105px;
+  justify-content: space-between;
 }
 
 .navigation-link {
+  display: block;
   color: #000;
+  text-decoration: none;
+}
+
+.navigation-service-link {
+  display: block;
+  text-decoration: none;
 }
 
 .navigatiton-toggler-item,
@@ -141,6 +187,12 @@ body {
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+}
+
+.navigatiton-toggler-item {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-toggler-link {
@@ -420,6 +472,8 @@ body {
 
 .logo-footer {
   margin: 0;
+  margin-top: 62px;
+  margin-bottom: 35px;
   padding: 0;
 }
 
@@ -433,6 +487,7 @@ body {
 .footer-menu-one {
   display: flex;
   margin: 0;
+  margin-bottom: 62px;
   padding: 0;
   justify-content: space-between;
 }
@@ -440,7 +495,13 @@ body {
 .footer-menu-two {
   display: flex;
   margin: 0;
+  margin-bottom: 62px;
   padding: 0;
+  justify-content: space-between;
+}
+
+.footer-service-menu {
+  display: flex;
   justify-content: space-between;
 }
 
@@ -453,10 +514,17 @@ body {
   text-transform: uppercase;
 }
 
+.media {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+
 .footer-menu-text {
   font-size: 16px;
   line-height: 20px;
   width: 234px;
+ 
 }
 
 /* СТРАНИЦЫ КАТАЛОГА */
