@@ -97,7 +97,9 @@
           <!--Первый слайд-->
           <li class="main-slider-item">
             <span class="main-slider-number">01</span>
-            <img src="images/slider/slider-1.png" width="560" height="560" alt="квадрокоптер">
+            <div class="main-slider-movement">
+              <img src="images/slider/slider-1.png" width="560" height="560" alt="квадрокоптер">
+            </div>
             <!--Описание слайда-->
             <div class="main-slider-description">
               <h2 class="slider-title">Порхает как бабочка, жалит как пчела!</h2>
@@ -116,50 +118,7 @@
               </table>
             </div>
           </li>
-          <!--Второй слайд-->
-          <li class="main-slider-item">
-            <span class="main-slider-number">02</span>
-            <img src="images/slider/slider-2.png" width="560" height="560" alt="фитнес-браслет">
-            <!--Описание слайда-->
-            <div class="main-slider-description">
-              <h2 class="slider-title">Худеем правильно!</h2>
-              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-              <a class="button" href="#">Подробнее</a>
-              <table class="main-slider-table">
-                <tr>
-                  <td>48 часов</td>
-                </tr>
-                <tr>
-                  <td>Без подзарядки</td>
-                </tr>
-              </table>
-            </div>
-          </li>
-          <!--Третий слайд-->
-          <li class="main-slider-item">
-            <span class="main-slider-number">03</span>
-            <img src="images/slider/slider-3.png" width="560" height="560" alt="палка для селфи">
-            <!--Описание слайда-->
-            <div class="main-slider-description">
-              <h2 class="slider-title">Делай селфи, как Бен Стиллер! </h2>
-              <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом
-                всего 5 кг.
-              </p>
-              <a class="button" href="catalog_monopods.html">Подробнее</a>
-              <table class="main-slider-table">
-                <tr>
-                  <td>8,5 м</td>
-                  <td>5 кг</td>
-                  <td>Карбон</td>
-                </tr>
-                <tr>
-                  <td>Длина палки</td>
-                  <td>Вес палки</td>
-                  <td>Материал</td>
-                </tr>
-              </table>
-            </div>
-          </li>
+
         </ul>
         <!--Элементы активности слайда-->
         <ol class="slider-pagination">
@@ -187,7 +146,7 @@
         <h2 class="visually-hidden">Каталог</h2>
         <ul class="category-list">
           <li class="category-item">
-            <a href="#">
+            <a class="category-item-a" href="#">
               <div class="categori-item-img">
                 <img src="images/category-catalog/vr.svg" width="160" height="160" alt="Виртуальная реальность">
               </div>
@@ -195,7 +154,7 @@
             </a>
           </li>
           <li class="category-item">
-            <a href="catalog_monopods.html">
+            <a class="category-item-a" href="catalog_monopods.html">
               <div class="categori-item-img">
                 <img src="images/category-catalog/monopods.svg" width="160" height="160" alt="Моноподы для селфи">
               </div>
@@ -203,7 +162,7 @@
             </a>
           </li>
           <li class="category-item">
-            <a href="#">
+            <a class="category-item-a" href="#">
               <div class="categori-item-img">
                 <img src="images/category-catalog/helmet_cams.svg" width="160" height="160" alt="Экшн-камеры">
               </div>
@@ -211,7 +170,7 @@
             </a>
           </li>
           <li class="category-item">
-            <a href="#">
+            <a class="category-item-a" href="#">
               <div class="categori-item-img">
                 <img src="images/category-catalog/fitbit.svg" width="160" height="160" alt="Фитнес-браслеты">
               </div>
@@ -219,7 +178,7 @@
             </a>
           </li>
           <li class="category-item">
-            <a href="#">
+            <a class="category-item-a" href="#">
               <div class="categori-item-img">
                 <img src="images/category-catalog/smartwatch.svg" width="160" height="160" alt="Умные часы">
               </div>
@@ -227,7 +186,7 @@
             </a>
           </li>
           <li class="category-item">
-            <a href="#">
+            <a class="category-item-a" href="#">
               <div class="categori-item-img">
                 <img src="images/category-catalog/quadcopters.svg" width="160" height="160" alt="Квадрокоптеры">
               </div>
@@ -248,23 +207,29 @@
         <!--услуги описание-->
         <ul class="services-description">
           <li class="services-description-item">
-            <h3>Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь
-              мы неплохо заработаем, поднимая его на ваш этаж.
-            </p>
+            <div class="services-description-text">
+              <h3>Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь
+                мы неплохо заработаем, поднимая его на ваш этаж.
+              </p>
+            </div>
           </li>
           <li class="services-description-item">
-            <h3>Гарантия</h3>
-            <p>
-              Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-              Товар, не дом, конечно же.
-            </p>
+            <div class="services-description-text">
+              <h3>Гарантия</h3>
+              <p>
+                Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+                Товар, не дом, конечно же.
+              </p>
+            </div>
           </li>
           <li class="services-description-item">
-            <h3>Кредит</h3>
-            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
-              кредита. Выгодные для банка, разумеется.
-            </p>
+            <div class="services-description-text">
+              <h3>Кредит</h3>
+              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
+                кредита. Выгодные для банка, разумеется.
+              </p>
+            </div>
           </li>
         </ul>
       </section>
@@ -272,7 +237,7 @@
       <section class="delivery-rare">
         <h2 class="visually-hidden">Заказ редкого товара</h2>
         <a class="delivery-rare-button" href="#">
-          <img src="images/truck.svg" width="125" height="100" alt="кнопка заказа редкого товара">
+          <img src="images/truck.svg" width="47" height="31" alt="кнопка заказа редкого товара">
           <span class="delivery-rare-text">Доставим редкий товар под заказ</span>
         </a>
       </section>
@@ -300,10 +265,10 @@
           <div class="contacts">
             <h3 class="contacts-title">Интернет-магазин «Девайс»</h3>
             <span class="about-us-contacts">Санкт-Петербург, набережная реки Карповки, 5, литера П.<br>
-              +7 (812) 812-12-12
+              <u>+7 (812) 812-12-12</u>
             </span>
           </div>
-          <div>
+          <div class="contacts">
             <h3 class="contacts-title">Время работы</h3>
             <span class="about-us-contacts">пн—пт: с 10:00 до 22:00<br>
               сб—вс: с 10:00 до 19:00
@@ -312,19 +277,26 @@
           <a class="button" href="#">Напишите нам</a>
         </div>
       </section>
-      <!--ПОДПИСКА-->
-      <section class="subscription">
+    </div>
+  </main>
+  <!--ПОДПИСКА-->
+  <footer class="main-subscription">
+    <div class="conteiner-subscription">
+      <div class="subscription-block">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
         <p class="subscription-text">Еженедельный дайджест с обзорами новинок,
-          длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+          длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
+        </p>
+      </div>
+      <div class="subscription-block">
         <form action="https://echo.htmlacademy.ru/" method="post">
           <input type="text" name="e-mail" placeholder="Ваш e-mail">
           <button type="submit">Подписаться</button>
         </form>
         <span class="subscription-span">Это бесплатно</span>
-      </section>
+      </div>
     </div>
-  </main>
+  </footer>
   <footer class="main-footer">
     <div class="conteiner-footer">
       <a class="logo-footer" href="#">
@@ -345,24 +317,24 @@
               <a class="footer-service-link" href="#">Контакты</a>
             </li>
           </ul>
-          <p class="footer-menu-text">Тел.: +7 (812) 812-12-12</p>
+          <p class="footer-menu-phone">Тел.: +7 (812) 812-12-12</p>
         </div>
         <div class="footer-menu-two">
           <span class="decor"></span>
           <ul class="media">
-            <li>
-              <a href="https://t.me/htmlacademy">
+            <li class="media-item">
+              <a class="media-link" href="https://t.me/htmlacademy">
                 <img src="images/icons_social/icons_telegram.svg" width="40" height="40" alt="Телеграмм">
               </a>
             </li>
-            <li>
-              <a href="https://www.youtube.com/user/htmlacademyru">
-                <img src="images/icons_social/icons_youtube.svg" width="16" height="11" alt="Ютуб">
+            <li class="media-item">
+              <a class="media-link" href="https://www.youtube.com/user/htmlacademyru">
+                <img src="images/icons_social/icons_youtube.svg" width="40" height="40" alt="Ютуб">
               </a>
             </li>
-            <li>
-              <a href="https://twitter.com/htmlacademy_ru">
-                <img src="images/icons_social/icons_twitter.svg" width="14" height="12" alt="Твитер">
+            <li class="media-item">
+              <a class="media-link" href="https://twitter.com/htmlacademy_ru">
+                <img src="images/icons_social/icons_twitter.svg" width="40" height="40" alt="Твитер">
               </a>
             </li>
           </ul>
