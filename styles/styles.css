@@ -351,11 +351,11 @@ body {
   
 }
 
-.main-slider-table tr:nth-of-type(1) {
+.main-slider-table tr:first-child {
   font-size: 36px;
 }
 
-.main-slider-table tr:nth-of-type(2) {
+.main-slider-table tr:last-child {
   font-size: 16px;
   color: #444;
 }
