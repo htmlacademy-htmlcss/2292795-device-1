@@ -17,22 +17,74 @@
       <!--НАВИГАЦИЯ-->
       <nav class="main-navigation">
         <div class="navigation-menu-one">
-          <form action="#" method="get">
-            <input type="search" placeholder="Поиск по сайту" name="serch">
-            <button type="submit">Найти</button>
-          </form>
+          <div class="navigation-form">
+            <form action="#" method="get">
+              <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                width="16" height="17" fill="none" viewBox="0 0 16 17">
+                <g clip-path="url(#a)">
+                  <path fill="#000"
+                    d="m15.7 15-3.1-3.1A7 7 0 0 0 7 .7a7 7 0 0 0-7 7 7 7 0 0 0 11.2 5.6l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1a1 1 0 0 0-.3-.7ZM2 7.7a5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5Z" />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 .7h16v16H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <input type="search" placeholder="Поиск по сайту" name="serch">
+              <button type="submit">Найти</button>
+            </form>
+          </div>
           <ul class="navigation-user-login">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Войти</a>
+              <a class="navigation-link link-login" href="#">
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="15" height="13" fill="none" viewBox="0 0 15 13">
+                  <g clip-path="url(#a)">
+                    <path fill="#000" d="M1 12.8h13a6.3 6.3 0 0 0-4.7-5.5c1-.6 1.7-1.7 1.7-3C11 2.3 9.4.8
+                  7.5.8A3.5 3.5 0 0 0 4 4.3c0 1.3.7 2.4 1.7 3A6.3 6.3 0 0 0 1 12.8Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 .8h15v12H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                Войти</a>
             </li>
           </ul>
           <ul class="navigation-user-menu">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Сравнить</a>
+              <a class="navigation-link link-liken" href="#">
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="10" height="13" fill="none" viewBox="0 0 10 13">
+                  <g fill="#000" clip-path="url(#a)">
+                    <path d="M6 .8H4v12h2V.8ZM2 4.8H0v8h2v-8ZM10 3.8H8v9h2v-9Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 .8h10v12H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                Сравнить</a>
             </li>
             <li class="navigation-item">
               <span class="navigation-basket-number">2</span>
-              <a class="navigation-link" href="#">Корзина</a>
+              <a class="navigation-link link-basket" href="#">
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="15" fill="none" viewBox="0 0 16 15">
+                  <g clip-path="url(#a)">
+                    <path fill="#000"
+                      d="m15.3 5.8-3.5.2-3.2-5L8 .9c-.2 0-.5 0-.6.3L4.2 6H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1 1.4 1h9.4c.7 0 1.2-.3 1.4-1l1.9-7v-.1c0-.4-.3-.8-.7-.8ZM8 2.7l2.2 3.2H5.9L8 2.7Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 .8h16v14H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                Корзина</a>
             </li>
           </ul>
         </div>
@@ -89,10 +141,17 @@
         <!--Переключение слайда-->
         <div class="main-slider-button">
           <button class="slider-button slider-prev" type="button">
-            <img src="images/slider/arrow_left.svg" width="20" height="60" alt="Предыдущее фото">
+            <svg class="slider-prev-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+              width="20" height="60" fill="none" viewBox="0 0 20 60">
+              <path fill="#000" d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" />
+            </svg>
           </button>
           <button class="slider-button slider-next" type="button">
-            <img src="images/slider/arrow_right.svg" width="20" height="60" alt="Следующее фото">
+
+            <svg class="slider-next-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+              width="20" height="60" fill="none" viewBox="0 0 20 60">
+              <path fill="#000" d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" />
+            </svg>
           </button>
         </div>
         <ul class="main-slider-list">
@@ -126,16 +185,28 @@
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
             <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <svg class="slider-pagination-icon" aria-hidden="true" focusable="false"
+                xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+                <circle cx="6" cy="6" r="5" fill="#000" stroke="#000" stroke-width="2" />
+              </svg>
               <span class="visually-hidden">1 слайд</span>
             </button>
           </li>
           <li class="slider-pagination-item">
             <button class="slider-pagination-button" type="button">
+              <svg class="slider-pagination-icon" aria-hidden="true" focusable="false"
+                xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+                <circle cx="6" cy="6" r="5" fill="#fff" stroke="#000" stroke-width="2" />
+              </svg>
               <span class="visually-hidden">2 слайд</span>
             </button>
           </li>
           <li class="slider-pagination-item">
             <button class="slider-pagination-button" type="button">
+              <svg class="slider-pagination-icon" aria-hidden="true" focusable="false"
+                xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+                <circle cx="6" cy="6" r="5" fill="#fff" stroke="#000" stroke-width="2" />
+              </svg>
               <span class="visually-hidden">3 слайд</span>
             </button>
           </li>
@@ -150,7 +221,13 @@
           <li class="category-item">
             <a class="category-item-a" href="#">
               <div class="categori-item-img">
-                <img src="images/category-catalog/vr.svg" width="160" height="160" alt="Виртуальная реальность">
+                <svg class="categogy-catalog-icon" aria-hidden="true" focusable="false"
+                  xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="none" viewBox="0 0 160 160">
+                  <path fill="#363636"
+                    d="M116.1 85.6V73c0-1.3 1-2.4 2.4-2.4l8.3 1.6V64c0-2.3-1.7-3.4-4.2-4.2l-23.2-6.6c1.6 1.4 1.9 2 1.9 4.4v45.2c0 2.3-.5 4-2 5.2l23.3-7c2.4-1 4.2-4.3 4.2-6.6v-8l-8.3 1.6c-1.3 0-2.4-1-2.4-2.4Z" />
+                  <path fill="#363636"
+                    d="m127.1 74-7.6-1.5c-1 0-1.8.9-1.8 1.9v9.9c0 1 .8 1.8 1.8 1.8l7.6-1.4c1.2-.4 1.9-.9 1.9-1.9v-7c0-1-.8-1.5-1.9-1.8ZM99.2 57.5c0-5.1-4.3-4.5-4.3-4.5s-57 4.7-60 5.1c-3 .5-2.9 4.4-2.9 4.4v36.3c0 3.8 2.6 3.8 2.6 3.8l16.5 1.4 8.1-11.7s1.1-1.8 2.5-1.8 2.4 1.8 2.4 1.8l9.1 13.6s19 1.9 22.5 1.9c3.7 0 3.5-5 3.5-5V57.4ZM45 90.2c-3.7 0-6.7-4.6-6.7-10.3 0-5.7 3-10.3 6.7-10.3s6.7 4.6 6.7 10.3c0 5.7-3 10.3-6.7 10.3ZM81 91.6c-4.6 0-8.4-5.2-8.4-11.7 0-6.4 3.8-11.7 8.4-11.7 4.7 0 8.5 5.3 8.5 11.7 0 6.5-3.8 11.7-8.5 11.7Z" />
+                </svg>
               </div>
               <span class="categori-item-span">Виртуальная реальность</span>
             </a>
@@ -158,7 +235,11 @@
           <li class="category-item">
             <a class="category-item-a" href="catalog_monopods.html">
               <div class="categori-item-img">
-                <img src="images/category-catalog/monopods.svg" width="160" height="160" alt="Моноподы для селфи">
+                <svg class="categogy-catalog-icon" aria-hidden="true" focusable="false"
+                  xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="none" viewBox="0 0 160 160">
+                  <path fill="#363636"
+                    d="M119.8 47H40.3a3.2 3.2 0 0 0-3.2 3.2v46.4c0 1.8 1.5 3.2 3.2 3.2h79.5c1.8 0 3.2-1.4 3.2-3.2V50.2c0-1.8-1.4-3.2-3.2-3.2ZM45.4 80.2h-.2A3.2 3.2 0 0 1 42 77v-7.2c0-1.8 1.4-3.2 3.2-3.2h.2v13.6Zm61.2 15.2H50.3v-44h56.3v44Zm8.8-17.8a4.1 4.1 0 1 1 0-8.3 4.1 4.1 0 0 1 0 8.3ZM91.7 43H68.5v2.8h23.2V43ZM83.6 107.9v-3h8V102H68.6v2.8h8V140a6 6 0 0 0-3.6 5.6V160h14.3v-14.3a6 6 0 0 0-3.6-5.6v-28h4.8l5 1.3v-6.8l-5 1.3h-4.8Z" />
+                </svg>
               </div>
               <span class="categori-item-span">Моноподы для селфи</span>
             </a>
@@ -166,7 +247,13 @@
           <li class="category-item">
             <a class="category-item-a" href="#">
               <div class="categori-item-img">
-                <img src="images/category-catalog/helmet_cams.svg" width="160" height="160" alt="Экшн-камеры">
+                <svg class="categogy-catalog-icon" aria-hidden="true" focusable="false"
+                  xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="none" viewBox="0 0 160 160">
+                  <path fill="#363636"
+                    d="M97.3 37.5c0-.7-.5-1.5-1.3-1.5H53c-.7 0-1.3.8-1.3 1.5V41h45.6v-3.5ZM98.2 117.8h-9.6v-10.4h-7v2.5H62.8a3.5 3.5 0 0 0-3.2-2.1h-12c-2 0-3.6 1.6-3.6 3.5v3c0 2 1.6 3.5 3.6 3.5h12c1.5 0 2.8-.9 3.3-2.3h18.7v2.3h-9.5c-.5 0-1 .4-1 1v3.2c0 .5.5 1 1 1h26.1c.5 0 1-.5 1-1v-3.2c0-.6-.5-1-1-1ZM104.7 48.4a7 7 0 0 0-6.8-5H51a7 7 0 0 0-7.1 7v46.9c0 3.9 3.3 7 7.1 7H98c3.9 0 7.1-3.1 7.1-7V86.9a23.2 23.2 0 0 0-.3-38.5ZM56.2 98.2a6 6 0 1 1 0-11.9 6 6 0 0 1 0 11.9Zm6-32.7c0 .8-.6 1.5-1.4 1.5h-9c-.7 0-1.4-.7-1.4-1.5V51.4c0-.8.7-1.4 1.4-1.4h9c.8 0 1.4.6 1.4 1.4v14.1ZM91.8 88a20 20 0 1 1 0-40.2 20 20 0 0 1 0 40.2Z" />
+                  <path fill="#363636"
+                    d="M91.8 80a12.2 12.2 0 1 0 0-24.5 12.2 12.2 0 0 0 0 24.5ZM75.6 69.2a1.4 1.4 0 1 0 0-2.9 1.4 1.4 0 0 0 0 2.9ZM108 69.2a1.4 1.4 0 1 0 0-2.9 1.4 1.4 0 0 0 0 2.9ZM83.1 55.4a1.4 1.4 0 1 0 0-2.8 1.4 1.4 0 0 0 0 2.8ZM100.4 83a1.4 1.4 0 1 0 0-3 1.4 1.4 0 0 0 0 3ZM99.7 55a1.4 1.4 0 1 0 0-2.9 1.4 1.4 0 0 0 0 2.9ZM83.8 83.3a1.4 1.4 0 1 0 0-2.8 1.4 1.4 0 0 0 0 2.8Z" />
+                </svg>
               </div>
               <span class="categori-item-span">Экшн-камеры</span>
             </a>
@@ -174,7 +261,13 @@
           <li class="category-item">
             <a class="category-item-a" href="#">
               <div class="categori-item-img">
-                <img src="images/category-catalog/fitbit.svg" width="160" height="160" alt="Фитнес-браслеты">
+                <svg class="categogy-catalog-icon" aria-hidden="true" focusable="false"
+                  xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="none" viewBox="0 0 160 160">
+                  <path fill="#363636"
+                    d="M125 51c.7 1.5 1.2 3.2 1.2 4.9v21c0 4.7-3.1 8.6-7.3 10-1.3 4-3.7 7.8-8 10.4-8.7 5.3-31.1 4.9-31.2 4.9-.1 0-22.5.4-31.2-4.9a18.7 18.7 0 0 1-8-10.3 10.5 10.5 0 0 1-7.8-10V55.9c0-1.7.4-3.3 1.1-4.7-3.6 1-7.8 2.7-7.8 6.2v30c0 10.3 11.8 24.4 53.7 24.4 41.8 0 53.6-14.1 53.6-24.4v-30c0-3.6-4.6-5.5-8.3-6.3Z" />
+                  <path fill="#363636"
+                    d="M46.6 85.5H112a10 10 0 0 0 10-10.1V56.9a10 10 0 0 0-10-10H46.6a10 10 0 0 0-10.1 10v18.5a10 10 0 0 0 10 10Zm63-29a1.6 1.6 0 1 1 0 3.1 1.6 1.6 0 0 1 0-3.1Zm0 4a1.6 1.6 0 1 1 .1 3.1 1.6 1.6 0 0 1 0-3Zm0 4a1.6 1.6 0 1 1 .1 3.2 1.6 1.6 0 0 1 0-3.2Zm0 3.9a1.6 1.6 0 1 1 0 3.1 1.6 1.6 0 0 1 0-3.1Zm0 4a1.6 1.6 0 1 1 .1 3.1 1.6 1.6 0 0 1 0-3Zm-4-16a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.1Zm0 16a1.6 1.6 0 1 1 0 3.1 1.6 1.6 0 0 1 0-3Zm-4-16a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.1Zm0 4.1a1.6 1.6 0 1 1 0 3.1 1.6 1.6 0 0 1 0-3Zm0 4a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.2Zm0 3.9a1.6 1.6 0 1 1 0 3.1 1.6 1.6 0 0 1 0-3.1Zm0 4a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.2Zm-7.6-16a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.1Zm0 8.1a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.2Zm0 4a1.6 1.6 0 1 1 0 3 1.6 1.6 0 0 1 0-3Zm0 4a1.6 1.6 0 1 1 0 3 1.6 1.6 0 0 1 0-3Zm-4-16a1.6 1.6 0 1 1 0 3.1 1.6 1.6 0 0 1 0-3.1Zm0 8a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.2Zm0 8a1.6 1.6 0 1 1 0 3 1.6 1.6 0 0 1 0-3Zm-4.1-16a1.6 1.6 0 1 1 0 3.1 1.6 1.6 0 0 1 0-3.1Zm0 4a1.6 1.6 0 1 1 0 3.1 1.6 1.6 0 0 1 0-3Zm0 4a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.2Zm0 8a1.6 1.6 0 1 1 0 3 1.6 1.6 0 0 1 0-3Zm-8.3-16a1.6 1.6 0 1 1 0 3.1 1.6 1.6 0 0 1 0-3.1Zm0 4a1.6 1.6 0 1 1 0 3.1 1.6 1.6 0 0 1 0-3Zm0 4a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.2Zm0 4a1.6 1.6 0 1 1 0 3 1.6 1.6 0 0 1 0-3Zm0 4a1.6 1.6 0 1 1 0 3 1.6 1.6 0 0 1 0-3Zm-4-12a1.6 1.6 0 1 1 0 3.1 1.6 1.6 0 0 1 0-3Zm-8.5-.2a1.6 1.6 0 1 1 0 3.1 1.6 1.6 0 0 1 0-3.1Zm0 4a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.2Zm-4-8a1.6 1.6 0 1 1 0 3 1.6 1.6 0 0 1 0-3Zm0 4a1.6 1.6 0 1 1 0 3.1 1.6 1.6 0 0 1 0-3.1Zm0 4a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.2Zm0 4a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.1Zm-4.3-8a1.6 1.6 0 1 1 0 3.1 1.6 1.6 0 0 1 0-3.1Zm0 4a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.2Zm0 4a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.1Zm0 4.1a1.6 1.6 0 1 1 0 3.1 1.6 1.6 0 0 1 0-3Zm-4.5-16.1a1.6 1.6 0 1 1 0 3.1 1.6 1.6 0 0 1 0-3.1Zm0 4a1.6 1.6 0 1 1 0 3.1 1.6 1.6 0 0 1 0-3.1Zm0 4a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.2Zm0 4a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.1Zm-4-8a1.6 1.6 0 1 1 0 3.1 1.6 1.6 0 0 1 0-3.1Zm0 4a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.2Z" />
+                </svg>
               </div>
               <span class="categori-item-span">Фитнес-браслеты</span>
             </a>
@@ -182,7 +275,11 @@
           <li class="category-item">
             <a class="category-item-a" href="#">
               <div class="categori-item-img">
-                <img src="images/category-catalog/smartwatch.svg" width="160" height="160" alt="Умные часы">
+                <svg class="categogy-catalog-icon" aria-hidden="true" focusable="false"
+                  xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="none" viewBox="0 0 160 160">
+                  <path fill="#363636"
+                    d="M106.5 63.2H105v-4.6c0-5-4.1-9.2-9.1-9.2H61.1c-5 0-9.1 4.1-9.1 9.2v42.8c0 5 4 9.2 9 9.2H96c5 0 9-4.1 9-9.2V98h1.6c.4 0 .8-.3.8-.8V83.5c0-.5-.4-.8-.8-.8H105v-8.8h1.5c.8 0 1.5-.7 1.5-1.5v-7.7c0-.8-.7-1.5-1.5-1.5ZM86 60.1a5.3 5.3 0 0 1 0 10.7c-3 0-5.3-2.4-5.3-5.4 0-3 2.4-5.3 5.3-5.3Zm-15.2 0a5.3 5.3 0 0 1 0 10.7c-2.9 0-5.3-2.4-5.3-5.4 0-3 2.4-5.3 5.3-5.3ZM57.3 80.4c0-3 2.4-5.4 5.3-5.4 3 0 5.3 2.4 5.3 5.4 0 3-2.4 5.4-5.3 5.4-3 0-5.3-2.4-5.3-5.4Zm13.6 19.5c-2.9 0-5.3-2.4-5.3-5.4 0-3 2.4-5.3 5.3-5.3a5.3 5.3 0 0 1 0 10.7Zm1.5-20a6 6 0 0 1 6-6 6 6 0 0 1 6.1 6 6 6 0 0 1-6 6.2 6 6 0 0 1-6-6.1Zm13.7 20c-3 0-5.3-2.4-5.3-5.4 0-3 2.4-5.3 5.3-5.3a5.3 5.3 0 0 1 0 10.7Zm8.3-14.1c-3 0-5.3-2.4-5.3-5.4 0-3 2.4-5.4 5.3-5.4 3 0 5.3 2.4 5.3 5.4 0 3-2.4 5.4-5.3 5.4ZM61.6 46.3h33.7c.9 0 1.5-.7 1.3-1.5L95 34c-.2-1.6-1.8-3-3.5-3h-26a3.7 3.7 0 0 0-3.5 3l-1.7 10.8c0 .8.5 1.5 1.3 1.5ZM95.3 113.7H61.6c-.8 0-1.4.7-1.3 1.5L62 126c.2 1.6 1.8 3 3.5 3h26c1.7 0 3.3-1.4 3.5-3l1.6-10.8c.2-.8-.4-1.5-1.3-1.5Z" />
+                </svg>
               </div>
               <span class="categori-item-span">Умные часы</span>
             </a>
@@ -190,7 +287,13 @@
           <li class="category-item">
             <a class="category-item-a" href="#">
               <div class="categori-item-img">
-                <img src="images/category-catalog/quadcopters.svg" width="160" height="160" alt="Квадрокоптеры">
+                <svg class="categogy-catalog-icon" aria-hidden="true" focusable="false"
+                  xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="none" viewBox="0 0 160 160">
+                  <path fill="#363636"
+                    d="M26 45.3c-5.5.4-10.2 1.6-11.4 2.6-.7.6-.7.6-.3 1.2.7.7 3.8 1.6 7.3 2.2 4 .7 12.5.7 13.7 0 1.2-.6 1.6-1.3 1.6-3 0-1.5-.6-2.3-2.2-2.8-1.4-.3-5.8-.5-8.6-.2ZM39.8 45.5c-.2.3-.3 2.1-.3 4.1 0 4 .2 3.8-2.2 4h-1l-.3 5.1-1.2.3c-2.5.6-4 2.6-3.7 5.3 0 1.9 1 3.3 2.5 4 1.1.6 1.5.6 11.3.6 5.5 0 10.1 0 10.2.2l-2.6 20.6-2.7 21.7c0 1.6.8 2.6 2.3 2.6 1.3 0 2-.6 2.4-1.9l3-21.8c1.5-11.5 2.8-20.9 3-20.9l2.1 3.2c3 4.6 2.4 4.3 7.6 4.3h4.4v5.6h-5.1c-4.8.2-5.2.2-6 .7-1.5 1.1-1.5 1.4-1.5 11 0 9.5 0 9.8 1.5 11l.8.7h31.4l.8-.7c1.5-1.2 1.6-1.5 1.6-11 0-9.6 0-9.9-1.7-11-.6-.5-1.1-.5-5.8-.6l-5.2-.1v-5.6h4.4c5.2 0 4.7.3 7.6-4.3 1.1-1.8 2.1-3.2 2.2-3.2l3 20.9c1.5 11.5 2.8 21.3 3 21.8.3 1.3 1 2 2.3 2 1.5 0 2.4-1.1 2.3-2.7l-2.7-21.7a900 900 0 0 1-2.5-20.6c0-.1 4.6-.2 10.1-.2 9.8 0 10.2 0 11.3-.5 1.5-.8 2.4-2.2 2.6-4.1a4.7 4.7 0 0 0-3.8-5.3l-1.2-.3-.3-5-1-.2c-2.3-.1-2.2.2-2.2-3.9l-.2-4.1c-.3-.4-.6-.5-1.4-.5-.6 0-1.3.1-1.4.3-.2.2-.3 1.5-.3 4 0 2.4-.1 3.7-.4 3.9-.1.2-.9.3-1.6.3-1.6 0-1.7 0-1.7 3V59h-67v-2.3c0-3 0-3.1-1.7-3.1-.7 0-1.4-.1-1.6-.3-.2-.2-.3-1.5-.3-4 0-2.4-.1-3.7-.3-3.9-.2-.2-.8-.3-1.5-.3-.8 0-1.1.1-1.3.5Zm42.8 40.1c3 1 5.4 3.4 6.2 6.2a11 11 0 0 1-.3 5.8c-.7 1.8-2.7 4-4.6 4.9-1.3.6-1.7.7-3.9.7s-2.6 0-4-.7c-1.8-1-3.8-3-4.5-5a11 11 0 0 1-.3-5.7 9.6 9.6 0 0 1 6.1-6.2c2-.6 3.3-.6 5.3 0Z" />
+                  <path fill="#363636"
+                    d="M77.8 89.4c-2 1-3.5 3.7-3 5.8a5.4 5.4 0 0 0 8 3.7c2-1.2 3-3.6 2.4-5.8a5.4 5.4 0 0 0-5.2-4.2c-.6 0-1.6.3-2.2.5ZM50 45.2c-3.8.6-4.4 1-4.4 3.4 0 1.8.4 2.4 2.2 3 1.6.4 7.2.5 10.5 0 7-.7 11.4-2.5 9.7-3.7-1.2-.9-4.9-1.8-9-2.4a66 66 0 0 0-9-.3ZM103.5 45.3c-6.3.5-11.9 2-11.9 3.1 0 1.8 7.9 3.5 15.7 3.5 5.8 0 7.1-.6 7.1-3.3 0-1.8-.6-2.6-2.3-3-1.7-.5-5.7-.6-8.6-.3ZM126.8 45.3c-1.8.2-3 .8-3.5 1.5-.3.7-.3 2.9.2 3.5 1 1.4 1.7 1.5 7 1.5 3.7 0 5.9-.1 8-.5 3.5-.6 6.5-1.5 7.2-2.2.5-.6.5-.6-.3-1.2-1.3-1.1-6-2.2-11.9-2.6-3.4-.3-4.5-.3-6.7 0Z" />
+                </svg>
               </div>
               <span class="categori-item-span">Квадрокоптеры</span>
             </a>
@@ -215,6 +318,7 @@
                 мы неплохо заработаем, поднимая его на ваш этаж.
               </p>
             </div>
+            <div class="services-description-images image-courier"></div>
           </li>
           <li class="services-description-item">
             <div class="services-description-text">
@@ -224,6 +328,7 @@
                 Товар, не дом, конечно же.
               </p>
             </div>
+            <div class="services-description-images image-guarantee"></div>
           </li>
           <li class="services-description-item">
             <div class="services-description-text">
@@ -232,6 +337,7 @@
                 кредита. Выгодные для банка, разумеется.
               </p>
             </div>
+            <div class="services-description-images image-craeit"></div>
           </li>
         </ul>
       </section>

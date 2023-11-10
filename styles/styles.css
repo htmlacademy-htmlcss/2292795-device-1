@@ -94,11 +94,13 @@ body {
 
 /* логотип */
 .logo {
+  position: relative;
+  top: -20px;
   display: block;
   width: 145px;
   height: 36px;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   padding-left: 60px;
 }
 
@@ -118,6 +120,7 @@ body {
   margin-bottom: 30px;
   padding: 0;
   align-items: center;
+  justify-content: space-between;
 }
 
 .navigation-menu-two {
@@ -142,18 +145,26 @@ body {
   align-items: center;
 }
 
+.navigation-form {
+  width: 515px;
+  position: relative;
+  
+}
+
 .navigation-user-login {
+  display: block;
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 231px;
+  
 }
 
 .navigation-user-menu {
   list-style-type: none;
   display: flex;
   margin: 0;
-  margin-left: auto;
+  /*margin-left: auto;*/
   padding: 0;
   width: 240px;
   justify-content: space-between;
@@ -185,14 +196,41 @@ body {
   display: flex;
   margin: 0 auto;
   padding: 0;
-  min-width: 105px;
+  min-width: 83px;
   justify-content: space-between;
 }
 
 .navigation-link {
+  position: relative;
   display: block;
   color: #000;
   text-decoration: none;
+}
+
+.link-login {
+  padding-left: 27px;
+}
+
+.link-liken {
+  padding-left: 22px;
+}
+
+.link-basket {
+  padding-left: 28px;
+}
+
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 12px;
+  bottom: 0;
+  left: 0;
+  margin: auto 0;
+  fill: #000;
+}
+
+.navigation-basket-number {
+  width: 21px;
 }
 
 .navigation-service-link {
@@ -253,13 +291,6 @@ body {
 }
 
 /* переключение слайдера*/
-.slider-button {
-  margin: 0;
-  padding: 0;
-  width: 20px;
-  height: 60px;
-}
-
 .main-slider-button {
   display: flex;
   width: 530px;
@@ -271,16 +302,45 @@ body {
   margin-left: 30px;
 }
 
+.slider-button {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 60px;
+  background-color: #FFF;
+  border: none;
+}
+
+.slider-prev-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 0;
+  fill: #000;
+}
+
+.slider-next-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 0;
+  fill: #000;
+  transform: rotate(-180deg);
+}
+
 /* слайды */
 .main-slider-list {
-  /*display: flex;
-  flex-direction: column;*/
   margin: 0;
   padding: 0;
 }
 
 .main-slider-item {
-  /*display: flex;*/
   display: block;
   margin: 0;
   padding: 0;
@@ -333,14 +393,12 @@ body {
 }
 
 /* описание слайда */
-
 .main-slider-description p {
   margin: 0;
   padding: 0;
   margin-bottom: 50px;
   color: #444;
 }
-
 
 .main-slider-table {
   vertical-align: center;
@@ -362,16 +420,24 @@ body {
 
 /* элементы активности слайда */
 .slider-pagination {
-  list-style-type: circle;
+  list-style-type: none;
   display: flex;
   margin: 0 auto;
   padding: 0;
 }
 
+.slider-pagination-button {
+  background-color: #FFF;
+  border: none;
+}
+
+.slider-pagination-icon {
+  fill: #000;
+}
+
 /* каталог */
 .category-catalog {
   margin: 0;
-  /*margin-top: 70px;*/
   padding: 0;
   width: 1160px;
   margin-bottom: 70px;
@@ -400,12 +466,23 @@ body {
 }
 
 .categori-item-img {
+  position: relative;
   width: 160px;
   height: 160px;
   background-color: #FFE17F;
   margin: 0;
   padding: 0;
   margin-bottom: 32px;
+}
+
+.categogy-catalog-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 0;
+  fill: #363636;
 }
 
 .categori-item-span {
@@ -448,7 +525,7 @@ body {
   width: 694px;
   height: 174px;
   grid-template-columns: 480px 170px;
-  
+  justify-content: space-between;
 }
 
 .services-description-text {
@@ -470,6 +547,30 @@ body {
 .services-description-text p {
   margin: 0;
   padding: 0;
+}
+
+.services-description-images {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.image-courier{
+  width: 136px;
+  height: 164px;
+  background-image: url(../images/icons_services/courier.svg);
+}
+
+.image-guarantee {
+  width: 171px;
+  height: 195px;
+  background-image: url(../images/icons_services/guarantee.svg)
+}
+
+.image-craeit {
+  width: 156px;
+  height: 188px;
+  background-image: url(../images/icons_services/cradit.svg)
 }
 
 /* товары под заказ*/
