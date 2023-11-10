@@ -148,7 +148,7 @@ body {
 .navigation-form {
   width: 515px;
   position: relative;
-  
+
 }
 
 .navigation-user-login {
@@ -157,7 +157,7 @@ body {
   margin: 0;
   padding: 0;
   width: 231px;
-  
+
 }
 
 .navigation-user-menu {
@@ -222,10 +222,10 @@ body {
 .navigation-icon {
   position: absolute;
   top: 0;
-  right: 12px;
+
   bottom: 0;
   left: 0;
-  margin: auto 0;
+  margin: auto;
   fill: #000;
 }
 
@@ -319,7 +319,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  margin: auto 0;
+  margin: auto;
   fill: #000;
 }
 
@@ -329,7 +329,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  margin: auto 0;
+  margin: auto;
   fill: #000;
   transform: rotate(-180deg);
 }
@@ -406,7 +406,7 @@ body {
   padding: 0;
   margin-top: 50px;
   margin-bottom: 26px;
-  
+
 }
 
 .main-slider-table tr:first-child {
@@ -422,16 +422,26 @@ body {
 .slider-pagination {
   list-style-type: none;
   display: flex;
+  width: 76px;
+  height: 12px;
   margin: 0 auto;
   padding: 0;
+  justify-content: space-between;
 }
 
 .slider-pagination-button {
+  position: relative;
   background-color: #FFF;
   border: none;
 }
 
 .slider-pagination-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
   fill: #000;
 }
 
@@ -481,7 +491,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  margin: auto 0;
+  margin: auto;
   fill: #363636;
 }
 
@@ -589,16 +599,33 @@ body {
   margin: 0;
   bottom: 0;
   align-items: center;
+  justify-content: space-between;
 }
 
 .delivery-rare-image {
+  position: relative;
   width: 125px;
   height: 100px;
+  background-color: #FFE17F;
+
 }
 
-.delivery-rare img {
+.delivery-image-inform {
+  background-color: #F0F0F0;
+}
+
+.delivery-rare-icon {
+  width: 47px;
+  height: 31px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
   background-color: #FFE17F;
-  
+  fill: #000;
+
 }
 
 .delivery-rare-text {
@@ -609,6 +636,7 @@ body {
   line-height: normal;
   letter-spacing: 4px;
   text-transform: uppercase;
+  color: #000;
 }
 
 /* о нас контакты */
@@ -620,7 +648,7 @@ body {
   width: 1160px;
   grid-template-columns: 526px 526px;
   column-gap: 108px;
-  
+
 }
 
 .about-us {
@@ -717,7 +745,7 @@ body {
 
 .subscription-block {
   display: flex;
-  
+
   margin: 0;
   padding: 0;
   justify-content: space-between;
@@ -750,8 +778,13 @@ body {
   display: block;
   margin: 0;
   padding: 0;
+  padding-left: 32px;
   width: 128px;
   color: #444;
+  background-image: url(../images/tick-green.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 16px 16px;
 }
 
 .subscription-block:last-child {
@@ -919,7 +952,7 @@ body {
   margin: 0;
   padding: 0;
 }
-  
+
 .breadcrumbs-item:not(:first-child) {
   margin-left: 16px;
 }
