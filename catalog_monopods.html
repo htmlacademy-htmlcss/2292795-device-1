@@ -17,28 +17,74 @@
       <!--НАВИГАЦИЯ-->
       <nav class="main-navigation">
         <div class="navigation-menu-one">
-          <form action="#" method="get">
-            <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none" viewBox="0 0 16 17">
-              <g clip-path="url(#a)">
-                <path fill="#000" d="m15.7 15-3.1-3.1A7 7 0 0 0 7 .7a7 7 0 0 0-7 7 7 7 0 0 0 11.2 5.6l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1a1 1 0 0 0-.3-.7ZM2 7.7a5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5Z"/>
-              </g><defs><clipPath id="a">
-                <path fill="#fff" d="M0 .7h16v16H0z"/></clipPath></defs>
+          <div class="navigation-form">
+            <form action="#" method="get">
+              <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                width="16" height="17" fill="none" viewBox="0 0 16 17">
+                <g clip-path="url(#a)">
+                  <path fill="#000"
+                    d="m15.7 15-3.1-3.1A7 7 0 0 0 7 .7a7 7 0 0 0-7 7 7 7 0 0 0 11.2 5.6l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1a1 1 0 0 0-.3-.7ZM2 7.7a5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5Z" />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 .7h16v16H0z" />
+                  </clipPath>
+                </defs>
               </svg>
-            <input type="search" placeholder="Поиск по сайту" name="serch">
-            <button type="submit">Найти</button>
-          </form>
+              <input type="search" placeholder="Поиск по сайту" name="serch">
+              <button type="submit">Найти</button>
+            </form>
+          </div>
           <ul class="navigation-user-login">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Войти</a>
+              <a class="navigation-link link-login" href="#">
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="15" height="13" fill="none" viewBox="0 0 15 13">
+                  <g clip-path="url(#a)">
+                    <path fill="#000" d="M1 12.8h13a6.3 6.3 0 0 0-4.7-5.5c1-.6 1.7-1.7 1.7-3C11 2.3 9.4.8
+                  7.5.8A3.5 3.5 0 0 0 4 4.3c0 1.3.7 2.4 1.7 3A6.3 6.3 0 0 0 1 12.8Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 .8h15v12H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                Войти</a>
             </li>
           </ul>
           <ul class="navigation-user-menu">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Сравнить</a>
+              <a class="navigation-link link-liken" href="#">
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="10" height="13" fill="none" viewBox="0 0 10 13">
+                  <g fill="#000" clip-path="url(#a)">
+                    <path d="M6 .8H4v12h2V.8ZM2 4.8H0v8h2v-8ZM10 3.8H8v9h2v-9Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 .8h10v12H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                Сравнить</a>
             </li>
             <li class="navigation-item">
               <span class="navigation-basket-number">2</span>
-              <a class="navigation-link" href="#">Корзина</a>
+              <a class="navigation-link link-basket" href="#">
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="15" fill="none" viewBox="0 0 16 15">
+                  <g clip-path="url(#a)">
+                    <path fill="#000"
+                      d="m15.3 5.8-3.5.2-3.2-5L8 .9c-.2 0-.5 0-.6.3L4.2 6H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1 1.4 1h9.4c.7 0 1.2-.3 1.4-1l1.9-7v-.1c0-.4-.3-.8-.7-.8ZM8 2.7l2.2 3.2H5.9L8 2.7Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 .8h16v14H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                Корзина</a>
             </li>
           </ul>
         </div>
@@ -165,15 +211,39 @@
           <!--сортировка каталога-->
           <div class="catalog-sort">
             <h3 class="catalog-title">сортировка:</h3>
-            <select name="sort">
+            <select class="sort">
               <option value="sort-link">Популярные</option>
             </select>
-            <a class="button" href="#">
-              <span class="visually-hidden">Сначала дешевле</span>
-            </a>
-            <a class="button" href="#">
-              <span class="visually-hidden">Сначала дороже</span>
-            </a>
+            <div class="catalog-sort-buttons">
+              <a class="button" href="#">
+                <svg class="sort-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="12" height="10" fill="none" viewBox="0 0 12 10">
+                  <g clip-path="url(#a)" opacity=".2">
+                    <path fill="#000" d="m6 0 5.5 10H.5" />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M.5 0h11v10H.5z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="visually-hidden">Сначала дешевле</span>
+              </a>
+              <a class="button" href="#">
+                <svg class="sort-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="12" height="10" fill="none" viewBox="0 0 12 10">
+                  <g clip-path="url(#a)" opacity=".2">
+                    <path fill="#000" d="M6 10 .5 0h11" />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M11.5 10H.5V0h11z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="visually-hidden">Сначала дороже</span>
+              </a>
+            </div>
           </div>
           <h2 class="visually-hidden">Карточки моноподов для селфи</h2>
           <div class="catalog-list">
@@ -283,17 +353,32 @@
           <ul class="media">
             <li class="media-item">
               <a class="media-link" href="https://t.me/htmlacademy">
-                <img src="images/icons_social/icons_telegram.svg" width="40" height="40" alt="Телеграмм">
+                <svg class="media-icon teligram-icon" aria-hidden="true" focusable="false"
+                  xmlns="http://www.w3.org/2000/svg" width="14" height="12" fill="none" viewBox="0 0 14 12">
+                  <path fill="#444"
+                    d="M12.443.074.623 4.632c-.807.324-.802.774-.148.974l3.035.947 7.021-4.43c.332-.202.635-.093.386.128L5.228 7.385l-.209 3.129c.307 0 .442-.141.614-.307l1.474-1.433 3.066 2.264c.565.312.971.152 1.112-.523l2.013-9.485c.206-.826-.316-1.2-.855-.956Z" />
+                </svg>
+                <!--<img src="images/icons_social/icons_telegram.svg" width="40" height="40" alt="Телеграмм">-->
               </a>
             </li>
             <li class="media-item">
               <a class="media-link" href="https://www.youtube.com/user/htmlacademyru">
-                <img src="images/icons_social/icons_youtube.svg" width="40" height="40" alt="Ютуб">
+                <svg class="media-icon youtube-icon" aria-hidden="true" focusable="false"
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="11" fill="none" viewBox="0 0 16 11">
+                  <path fill="#444"
+                    d="M15.667 1.675a1.857 1.857 0 0 0-.51-.847 2.034 2.034 0 0 0-.893-.495c-1.252-.33-6.268-.33-6.268-.33a51.083 51.083 0 0 0-6.26.314 2.107 2.107 0 0 0-.892.506c-.246.238-.425.53-.518.851A19.393 19.393 0 0 0 0 5.337C-.008 6.564.101 7.79.326 8.999c.091.32.27.611.516.846.248.236.556.406.894.496 1.27.329 6.26.329 6.26.329 2.094.024 4.188-.08 6.268-.313.335-.087.642-.257.892-.495.244-.23.42-.524.51-.847.23-1.207.342-2.434.334-3.663a17.72 17.72 0 0 0-.333-3.678ZM6.402 7.619V3.055l4.173 2.282L6.402 7.62Z" />
+                </svg>
+                <!--<img src="images/icons_social/icons_youtube.svg" width="40" height="40" alt="Ютуб">-->
               </a>
             </li>
-            <li>
+            <li class="media-item">
               <a class="media-link" href="https://twitter.com/htmlacademy_ru">
-                <img src="images/icons_social/icons_twitter.svg" width="40" height="40" alt="Твитер">
+                <svg class="media-icon twitter-icon" aria-hidden="true" focusable="false"
+                  xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 15 15">
+                  <path fill="#444"
+                    d="M9.7.155c1.5-.5 2.6.3 3.2 1.1.5-.2 1.1-.4 1.7-.6 0 .8-.5 1.4-.8 1.6.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4c-.3 0-3.7-.4-4.3-1.8 2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2-1.1-.8-2.3-1.5-2.2-3.5.3.3.9.5 1.2.4-.6-.2-1.8-3.1-.8-4.6 1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z" />
+                </svg>
+                <!--<img src="images/icons_social/icons_twitter.svg" width="40" height="40" alt="Твитер">-->
               </a>
             </li>
           </ul>
