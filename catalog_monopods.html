@@ -22,8 +22,9 @@
       <nav class="main-navigation">
         <div class="navigation-menu-one">
           <div class="navigation-form">
-            <form class="forms" action="#" method="get">
-              <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+            <form class="forms"  action="#" method="get">
+              <label class="navigation-form-label" for="search-form"></label>
+              <svg class="navigation-icon-form" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                 width="16" height="17" fill="none" viewBox="0 0 16 17">
                 <g clip-path="url(#a)">
                   <path fill="#000"
@@ -35,8 +36,8 @@
                   </clipPath>
                 </defs>
               </svg>
-              <input type="search" placeholder="Поиск по сайту" name="serch">
-              <button type="submit">Найти</button>
+              <input class="navigation-form-input" id="search-form" type="search"  name="serch" placeholder="Поиск по сайту">
+              <button class="navigation-submit" type="submit">Найти</button>
             </form>
           </div>
           <ul class="navigation-user-login">
@@ -75,6 +76,8 @@
             </li>
             <li class="navigation-item">
               <span class="navigation-basket-number">2</span>
+            </li>
+            <li class="navigation-item">
               <a class="navigation-link link-basket" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   width="16" height="15" fill="none" viewBox="0 0 16 15">
@@ -88,14 +91,72 @@
                     </clipPath>
                   </defs>
                 </svg>
-                Корзина</a>
+                <span class="basket-span"> Корзина</span>
+              </a>
+
+              <!--Поповер-->
+              <div class="popover popover-cart">
+                <h2 class=" visually-hidden popover-title">Корзина</h2>
+                <!-- декоративная полосочка -->
+                <span class="popover-decor"></span>
+                <!-- поповер - контент -->
+                <div class="popover-content">
+                  <ul class="popover-content-list">
+                    <li class="popover-content-item">
+                      <span class="popover-content-span">Любительская<br> селфи-палка</span>
+                      <button class="popover-item-button" type="button">
+                        <svg class="popover-item-imagne" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                          focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                          <path
+                            d="M10 0.909091L9.09091 0L5 4.09091L0.909091 0L0 0.909091L4.09091 5L0 9.09091L0.909091 10L5 5.90909L9.09091 10L10 9.09091L5.90909 5L10 0.909091Z"
+                            fill="white" />
+                        </svg>
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                      <span class="popover-item-line"></span>
+                    </li>
+                    <li class="popover-content-item">
+                      <span class="popover-content-span">Профессиональная селфи-палка</span>
+                      <button class="popover-item-button" type="button">
+                        <svg class="popover-item-imagne" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                          focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                          <path
+                            d="M10 0.909091L9.09091 0L5 4.09091L0.909091 0L0 0.909091L4.09091 5L0 9.09091L0.909091 10L5 5.90909L9.09091 10L10 9.09091L5.90909 5L10 0.909091Z"
+                            fill="white" />
+                        </svg>
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                      <span class="popover-item-line"></span>
+                    </li>
+                  </ul>
+                </div>
+                <!-- поповер -подсчет -->
+                <div class="popover-account">
+                  <ul class="popover-account-list">
+                    <li class="popover-account-item">
+                      <span class="popover-account-span">Товаров:</span>
+                      <span class="popover-account-quantity"> 2</span>
+                    </li>
+                    <li class="popover-account-item">
+                      <span class="popover-account-span">Сумма:</span>
+                      <span class="popover-account-amount"> 2000</span>
+                      <span class="popover-account-currency">Р</span>
+                    </li>
+                  </ul>
+                </div>
+                <!-- поповер-кнопка открытия -->
+                <button class="popover-open-button" type="submit">
+                  <span class="popover-open-span">Открыть корзину</span>
+                </button>
+
+              </div>
             </li>
           </ul>
         </div>
         <div class="navigation-menu-two">
           <!--Выпадающее меню-->
           <div class="navigation-catalog-toggler">
-            <span class="navigatiton-toggler-item">Каталог товаров</span>
+            <span class="navigatiton-toggler-span">Каталог товаров</span>
             <div class="navigation-toggler-image">
               <img src="images/plus.svg" width="16" height="16" alt="Кнопка раскрытия меню">
             </div>
@@ -164,31 +225,76 @@
 
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <h3 class="catalog-title">фильтр:</h3>
-          <!--фильтр цена-->
-          <input type="range" min="0" step="5000">
+          
+          <!--фильтр цена (range-slider)-->
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Стоимость</legend>
+            <div class="range-scale">
+              <div class="range-bar" style="left: 0px; width: 120px;">
+                <label class="catalog-filter-labels">
+                  <button type="button" class="range-toggle toggle-min">
+                    <span class="visually-hidden">Изменить минимальную цену</span>
+                  </button>
+                  <span class="range-world world-beginning">от</span>
+                  <input class="range-inputs range-inputs-min" type="number" value="0" name="min-price"
+                    style="width: 28px; padding: 0 1px;">
+                </label>
+                <label class="catalog-filter-labels">
+                  <button type="button" class="range-toggle toggle-max">
+                    <span class="visually-hidden">Изменить максимальную цену</span>
+                  </button>
+                  <span class="range-world world-end">до</span>
+                  <input class="range-inputs range-inputs-max" type="number" value="5000" name="max-price"
+                    style="width: 55px; padding: 0 8px;">
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          
           <!--фильтр цвет-->
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Цвет</legend>
-            <label class="control">
-              <input class="control-input" type="checkbox" name="black" checked>
-              Черный
-            </label>
-            <label class="control">
-              <input class="control-input" type="checkbox" name="white" checked>
-              Белый
-            </label>
-            <label class="control">
-              <input class="control-input" type="checkbox" name="blue">
-              Синий
-            </label>
-            <label class="control">
-              <input class="control-input" type="checkbox" name="red">
-              Красный
-            </label>
-            <label class="control">
-              <input class="control-input" type="checkbox" name="pink">
-              Розовый
-            </label>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="black" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label"> Черный </span>
+                </label>
+              </li>
+
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="white" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label"> Белый </span>
+                </label>
+              </li>
+
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="blue">
+                  <span class="control-mark"></span>
+                  <span class="control-label"> Синий </span>
+                </label>
+              </li>
+
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="red">
+                  <span class="control-mark"></span>
+                  <span class="control-label"> Красный </span>
+                </label>
+              </li>
+
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="pink">
+                  <span class="control-mark"></span>
+                  <span class="control-label"> Розовый </span>
+                </label>
+              </li>
+            </ul>
           </fieldset>
           <!--фильтр блютус-->
           <fieldset class="catalog-filter-group">
@@ -196,14 +302,16 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="Bluetooth" value="yes" checked>
-                  Есть
+                  <input class="visually-hidden control-input" type="radio" name="Bluetooth" value="yes" checked>
+                  <span class="control-mark radio-mark" ></span>
+                  <span class="control-label"> Есть </span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="Bluetooth" value="not">
-                  Нет
+                  <input class="visually-hidden control-input" type="radio" name="Bluetooth" value="not">
+                  <span class="control-mark radio-mark"></span>
+                  <span class="control-label"> Нет </span>
                 </label>
               </li>
             </ul>
@@ -211,6 +319,7 @@
           <!--фильтр кнопка-->
           <button class="button button-show" type="submit">Показать</button>
         </form>
+
         <!--тело каталога-->
         <div class="catalog-chapter">
           <!--сортировка каталога-->
