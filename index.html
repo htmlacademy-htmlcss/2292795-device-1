@@ -161,28 +161,37 @@
           <div class="navigation-catalog-toggler">
             <span class="navigatiton-toggler-span">Каталог товаров</span>
             <div class="navigation-toggler-image">
-              <img src="images/plus.svg" width="16" height="16" alt="Кнопка раскрытия меню">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.3" clip-path="url(#clip0_51220_980)">
+                  <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_51220_980">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
             </div>
-              <ul class="navigation-toggler-menu">
-                <li class="navigation-toggler-item devaice">
-                  <a class="navigation-toggler-link" href="#">Виртуальная реальность</a>
-                </li>
-                <li class="navigation-toggler-item devaice">
-                  <a class="navigation-toggler-link" href="catalog_monopods.html">Моноподы для cелфи</a>
-                </li>
-                <li class="navigation-toggler-item devaice">
-                  <a class="navigation-toggler-link" href="#">Экшн-камеры</a>
-                </li>
-                <li class="navigation-toggler-item gadget">
-                  <a class="navigation-toggler-link" href="#">Фитнес-браслеты</a>
-                </li>
-                <li class="navigation-toggler-item gadget">
-                  <a class="navigation-toggler-link" href="#">Умные часы</a>
-                </li>
-                <li class="navigation-toggler-item robot" >
-                  <a class="navigation-toggler-link" href="#">Квадрокоптеры</a>
-                </li>
-              </ul>
+            <ul class="navigation-toggler-menu">
+              <li class="navigation-toggler-item devaice">
+                <a class="navigation-toggler-link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="navigation-toggler-item devaice">
+                <a class="navigation-toggler-link" href="catalog_monopods.html">Моноподы для cелфи</a>
+              </li>
+              <li class="navigation-toggler-item devaice">
+                <a class="navigation-toggler-link" href="#">Экшн-камеры</a>
+              </li>
+              <li class="navigation-toggler-item gadget">
+                <a class="navigation-toggler-link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="navigation-toggler-item gadget">
+                <a class="navigation-toggler-link" href="#">Умные часы</a>
+              </li>
+              <li class="navigation-toggler-item robot">
+                <a class="navigation-toggler-link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
           </div>
           <!--Сервисное меню-->
           <ul class="navigation-service-menu">
@@ -206,9 +215,27 @@
       <!--СЛАЙДЕР-->
       <section class="main-slider">
         <h2 class="visually-hidden">Слайдер</h2>
+
+        <!--Переключение слайда-->
+        <div class="main-slider-button">
+          <button class="slider-button slider-prev" type="button">
+            <svg class="slider-prev-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+              width="20" height="60" fill="none" viewBox="0 0 20 60">
+              <path fill="#000" d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" />
+            </svg>
+          </button>
+          <button class="slider-button slider-next" type="button">
+            <svg class="slider-next-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+              width="20" height="60" fill="none" viewBox="0 0 20 60">
+              <path fill="#000" d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" />
+            </svg>
+          </button>
+        </div>
+
         <ul class="main-slider-list">
           <!--Первый слайд-->
-          <li class="main-slider-item">
+          <li class="main-slider-item active">
+            <span class="main-slider-number">01</span>
             <div class="main-slider-movement">
               <img src="images/slider/slider-1.png" width="560" height="560" alt="квадрокоптер">
             </div>
@@ -229,17 +256,16 @@
                 </tr>
               </table>
             </div>
-            <span class="main-slider-number">01</span>
           </li>
-
           <!--Второй слайд-->
-          <li class="visually-hidden main-slider-item">
+          <li class="main-slider-item">
+            <span class="main-slider-number">02</span>
             <div class="main-slider-movement">
               <img src="images/slider/slider-2.png" width="560" height="560" alt="фитнес-браслет">
             </div>
             <!--Описание слайда-->
             <div class="main-slider-description">
-              <h2 class="slider-title">Худеем правильно!</h2>
+              <h2 class="slider-title">Худеем<br> правильно!</h2>
               <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               <a class="button button-detailed" href="#">Подробнее</a>
               <table class="main-slider-table">
@@ -251,17 +277,16 @@
                 </tr>
               </table>
             </div>
-            <span class="main-slider-number">02</span>
           </li>
-
           <!--Третий слайд-->
-          <li class="visually-hidden main-slider-item">
+          <li class="main-slider-item">
+            <span class="main-slider-number">03</span>
             <div class="main-slider-movement">
               <img src="images/slider/slider-3.png" width="560" height="560" alt="палка для селфи">
             </div>
             <!--Описание слайда-->
             <div class="main-slider-description">
-              <h2 class="slider-title">Делай селфи, как Бен Стиллер! </h2>
+              <h2 class="slider-title">Делай селфи,<br> как Бен Стиллер! </h2>
               <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом
                 всего 5 кг.
               </p>
@@ -279,24 +304,9 @@
                 </tr>
               </table>
             </div>
-            <span class="main-slider-number">03</span>
           </li>
         </ul>
-        <!--Переключение слайда-->
-        <div class="main-slider-button">
-          <button class="slider-button slider-prev" type="button">
-            <svg class="slider-prev-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
-              width="20" height="60" fill="none" viewBox="0 0 20 60">
-              <path fill="#000" d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" />
-            </svg>
-          </button>
-          <button class="slider-button slider-next" type="button">
-            <svg class="slider-next-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
-              width="20" height="60" fill="none" viewBox="0 0 20 60">
-              <path fill="#000" d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" />
-            </svg>
-          </button>
-        </div>
+
         <!--Элементы активности слайда-->
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
@@ -317,6 +327,7 @@
         </ol>
       </section>
     </div>
+
     <!--КАТАЛОГ-->
     <div class="conteiner-main">
       <section class="category-catalog">
@@ -404,57 +415,64 @@
           </li>
         </ul>
       </section>
-      <!--УСЛУГИ-слайдер-->
-      <section class="services-slider">
-        <h2 class="visually-hidden">Услуги</h2>
-        <!--услуги список-->
-        <ul class="services-list">
-          <li class="services-list-item"><a class="button button-services" href="#">Доставка</a></li>
-          <li class="services-list-item"><a class="button button-services" href="#">Гарантия</a></li>
-          <li class="services-list-item"><a class="button button-services" href="#">Кредит</a></li>
-        </ul>
-        <!-- декоративная палочка -->
-        <span class="services-slider-line"></span>
-        <!--услуги описание-->
-        <ul class="services-description">
-          <!--первый слайд-->
-          <li class="services-description-item">
-            <div class="services-description-text">
-              <h3>Доставка</h3>
-              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь
-                мы неплохо заработаем, поднимая его на ваш этаж.
-              </p>
-            </div>
-            <div class="services-description-images image-courier"></div>
-          </li>
+    </div>
+    <!--УСЛУГИ-слайдер-->
+    <div class="services-slider">
+      <div class="conteiner-main">
+        <section class="services-slider-flex">
+          <h2 class="visually-hidden">Услуги</h2>
+          <!--услуги список-->
+          <ul class="services-list">
+            <li class="services-list-item"><a class="button button-services" href="#">Доставка</a></li>
+            <li class="services-list-item"><a class="button button-services" href="#">Гарантия</a></li>
+            <li class="services-list-item"><a class="button button-services" href="#">Кредит</a></li>
+          </ul>
+          <!-- декоративная палочка -->
+          <span class="services-slider-line"></span>
+          <!--услуги описание-->
+          <ul class="services-description">
+            <!--первый слайд-->
+            <li class="services-description-item">
+              <div class="services-description-text">
+                <h3>Доставка</h3>
+                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь
+                  мы неплохо заработаем, поднимая его на ваш этаж.
+                </p>
+              </div>
+              <div class="services-description-images image-courier"></div>
+            </li>
 
-          <!--второй слайд-->
-          <li class="visually-hidden services-description-item">
-            <div class="services-description-text">
-              <h3>Гарантия</h3>
-              <p>
-                Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-                Товар, не дом, конечно же.
-              </p>
-            </div>
-            <div class="services-description-images image-guarantee"></div>
-          </li>
+            <!--второй слайд-->
+            <li class="visually-hidden services-description-item">
+              <div class="services-description-text">
+                <h3>Гарантия</h3>
+                <p>
+                  Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам
+                  новый.
+                  Товар, не дом, конечно же.
+                </p>
+              </div>
+              <div class="services-description-images image-guarantee"></div>
+            </li>
 
-          <!--третий слайд-->
-          <li class="visually-hidden services-description-item">
-            <div class="services-description-text">
-              <h3>Кредит</h3>
-              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
-                кредита. Выгодные для банка, разумеется.
-              </p>
-            </div>
-            <div class="services-description-images image-cradit"></div>
-          </li>
-        </ul>
-        <!--<span class="services-slider-background"></span>-->
-      </section>
-
-      <!--ТОВАРЫ ПОД ЗАКАЗ-->
+            <!--третий слайд-->
+            <li class="visually-hidden services-description-item">
+              <div class="services-description-text">
+                <h3>Кредит</h3>
+                <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+                  условия
+                  кредита. Выгодные для банка, разумеется.
+                </p>
+              </div>
+              <div class="services-description-images image-cradit"></div>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <span class="services-slider-background"></span>
+    </div>
+    <!--ТОВАРЫ ПОД ЗАКАЗ-->
+    <div class="conteiner-main">
       <section class="delivery-rare">
         <h2 class="visually-hidden">Заказ редкого товара</h2>
         <a class="delivery-rare-button" href="#">
@@ -521,11 +539,11 @@
         </div>
       </section>
     </div>
-    <span class="services-slider-background"></span>
+
   </main>
-  
+
   <!--ПОДПИСКА-->
-  <footer class="main-subscription">
+  <div class="main-subscription">
     <div class="conteiner-subscription">
       <div class="subscription-block">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
@@ -544,7 +562,7 @@
         <span class="subscription-span">Это бесплатно</span>
       </div>
     </div>
-  </footer>
+  </div>
   <footer class="main-footer">
     <div class="conteiner-footer">
       <a class="logo-footer" href="#">
@@ -613,6 +631,51 @@
       </div>
     </div>
   </footer>
+  <!-- Модальное окно -->
+  <div class="modal-container">
+    <div class="modal modal-delivery-rare">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-delivery-content">
+        <h2 class="modal-delivery-title">Доставка под заказ</h2>
+        <form class="modal-delivery-form">
+          <p class="field-group">
+            <label class="delivery-form-labels" for="delivery-name">Ваше имя:</label>
+            <input class="delivery-form-field" type="text" id="delivery-name" name="delivery-name" placeholder="Введите имя">
+          </p>
+          <p class="field-group">
+            <label class="delivery-form-labels" for="delivery-email">Ваш e-mail:</label>
+            <input class="delivery-form-field" type="email" id="delivery-email" name="delivery-email" placeholder="почта">
+          </p>
+          <p class="field-group">
+            <label class="delivery-form-labels" for="delivery-content">Что нужно привезти:</label>
+            <input class="delivery-form-field" type="text" id="delivery-content" name="delivery-content" placeholder="В свободной форме">
+          </p>
+
+          <fieldset class="delivery-form-group">
+            <legend class="delivery-group-title">Количество:</legend>
+            <div class="delivery-group-count">
+               <label class="delivery-group-labels" for="button-minus">
+                  <input class="delivery-group-inputs" type="button" value="-" id="button-minus">
+               </label>
+                <label class="delivery-group-labels" for="number-count">
+                  <input class="delivery-group-inputs" type="number" step="1" min="1" max="20" id="number-count" name="quantity" value="1" >
+                </label>
+                <label class="delivery-group-labels" for="button-plus">
+                  <input class="delivery-group-inputs" type="button" value="+" id="button-plus">
+                </label>
+            </div>
+          </fieldset>
+
+          <button class="button delivery-form-botton" type="post">Отправить</button>
+        </form>
+      </section>
+    </div>
+
+  </div>
+
+
 </body>
 
 </html>
