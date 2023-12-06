@@ -1604,6 +1604,10 @@ body {
   z-index: 100;
 }
 
+.modal-container-close { 
+  display: none;
+}
+
 
 .modal {
   position: relative;
@@ -1619,8 +1623,6 @@ body {
   height: 424px;
   display: flex;
   flex-direction: column;
-  
- 
 }
 
 .modal-close-button {
@@ -1639,6 +1641,8 @@ body {
 }
 
 .modal-delivery-title {
+  position: relative;
+  
   margin: 0;
   margin-bottom: 42px;
   font-family: Raleway;
@@ -1653,7 +1657,6 @@ body {
   display: flex;
   height: 100%;
   flex-direction: column;
-  
   
 }
 
@@ -1670,7 +1673,6 @@ body {
   flex-direction: column;
   margin: 0;
   justify-content: space-between;
-  /*margin-bottom: 42px;*/
 }
 
 p.field-group:not(:last-of-type) {
@@ -1680,11 +1682,6 @@ p.field-group:not(:last-of-type) {
 
 p.field-group:last-of-type {
   width: 540px;
-  height: 94px;
-}
-
-.delivery-form-group {
-  width: 180px;
   height: 94px;
 }
 
@@ -1701,7 +1698,6 @@ p.field-group:last-of-type {
   font-weight: 400;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.3);
- 
   background-color: #F0F0F0;
   border: none;
   
@@ -1720,6 +1716,7 @@ p.field-group:last-of-type {
 }
 
 .delivery-form-labels {
+  position: relative;
   font-family: inherit;
   font-size: 18px;
   font-style: normal;
@@ -1734,7 +1731,6 @@ p.field-group:last-of-type {
   flex-direction: column;
   margin: 0;
   padding: 0;
-  max-width: 0;
   width: 180px;
   height: 94px;
   border: none;
@@ -1742,13 +1738,156 @@ p.field-group:last-of-type {
 
 .delivery-group-count {
   display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   
+}
+
+.delivery-group-title {
+  margin-bottom: 7px ;
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; 
+  letter-spacing: -0.36px;
+  color: #000;
+}
+
+.delivery-group-labels {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.range-button {
+  margin: 0;
+  width: 60px;
+  height: 60px;
+  padding: 22px 20px 22px;
+  border: none;
+}
+
+.button-minus {
+  position: relative;
+}
+
+.button-icons-minus {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.button-plus {
+  position: relative;
+}
+
+.button-icons-plus {
+  position: absolute;
+  top: 20px;
+  right: 22px;
+
 }
 
 .delivery-group-inputs {
   width: 20px;
   padding: 20px;
-  
+  border: none;
+  background-color: #F0F0F0;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #000;
+}
+
+.delivery-group-inputs::-webkit-outer-spin-button,
+.delivery-group-inputs::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.error-message {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  color: #FF3D3D;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+input[type="email"]:invalid {
+  border: 2px solid #FF3D3D;
+}
+
+/* ТУЛТИП */
+.tooltip {
+  position: absolute;
+  top: 290px;
+  right: 112px;
+  margin-top: 0;
+  width: 26px;
+  height: 26px;
+  background-color: #FFE17F;
+  background-position: center;
+  border-radius: 50%;
+  z-index: 90;
+}
+
+.tooltip-toggle {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.tooltip-icon {
+  position: absolute;
+  width: 4px;
+  height: 12px;
+  top: 6px;
+  left: 10px;
+  margin: 0;
+  display: block;
+}
+
+.tooltip-text {
+  position: absolute;
+  top: 34px;
+  right: -52px;
+  background-color: #000;
+  box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 0.10);
+  color: #FFF;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: none;
+  padding: 19px 17px 0 19px;
+  border-radius: 8px;
+  display: block;
+  width: 200px;
+  display: none;
+}
+
+.tooltip-decor {
+  position: absolute;
+  width: 14px;
+  height: 6px;
+  background-image: url(../images/popover/triangle.svg);
+  background-repeat: no-repeat;
+  top: -6px;
+  left: 164px;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }
 
 /* СТРАНИЦЫ КАТАЛОГА */
