@@ -22,7 +22,7 @@
       <nav class="main-navigation">
         <div class="navigation-menu-one">
           <div class="navigation-form">
-            <form class="forms"  action="#" method="get">
+            <form class="forms" action="#" method="get">
               <label class="navigation-form-label" for="search-form"></label>
               <svg class="navigation-icon-form" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                 width="16" height="17" fill="none" viewBox="0 0 16 17">
@@ -36,7 +36,11 @@
                   </clipPath>
                 </defs>
               </svg>
-              <input class="navigation-form-input" id="search-form" type="search"  name="serch" placeholder="Поиск по сайту">
+              <!-- до наведеня на форму поиска -->
+              <!--<input class="navigation-form-input" id="search-form" type="search"  name="serch" placeholder="Поиск по сайту">-->
+              <!-- после наведеня на форму поиска -->
+              <input class="navigation-form-input form-input-catalog" id="search-form" type="search" name="serch"
+                placeholder="Текст поиска">
               <button class="navigation-submit" type="submit">Найти</button>
             </form>
           </div>
@@ -55,7 +59,12 @@
                     </clipPath>
                   </defs>
                 </svg>
-                Войти</a>
+                <!-- логин пользователя и кнопка Выйти -->
+                Коля Петухов
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="button-exit" type="button" href="#">Выйти</a>
             </li>
           </ul>
           <ul class="navigation-user-menu">
@@ -234,7 +243,7 @@
 
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <h3 class="catalog-title">фильтр:</h3>
-          
+
           <!--фильтр цена (range-slider)-->
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость</legend>
@@ -259,7 +268,7 @@
               </div>
             </div>
           </fieldset>
-          
+
           <!--фильтр цвет-->
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Цвет</legend>
@@ -309,14 +318,14 @@
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Bluetooth</legend>
             <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
+              <li class="catalog-filter-item filter-item-bluetooth">
                 <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="Bluetooth" value="yes" checked>
-                  <span class="control-mark radio-mark" ></span>
+                  <span class="control-mark radio-mark"></span>
                   <span class="control-label"> Есть </span>
                 </label>
               </li>
-              <li class="catalog-filter-item">
+              <li class="catalog-filter-item filter-item-bluetooth">
                 <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="Bluetooth" value="not">
                   <span class="control-mark radio-mark"></span>
@@ -334,15 +343,15 @@
           <!--сортировка каталога-->
           <div class="catalog-sort">
             <h3 class="catalog-title">сортировка:</h3>
-            <select class="sort" disabled>
+            <select class="sort">
               <option value="sort-link">Популярные</option>
             </select>
             <div class="catalog-sort-buttons">
-              <a type="button" class="button-sort" href="#" >
+              <a type="button" class="button-sort" href="#">
                 <svg class="sort-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   width="12" height="10" fill="none" viewBox="0 0 12 10">
                   <g clip-path="url(#a)">
-                    <path  d="m6 0 5.5 10H.5" />
+                    <path d="m6 0 5.5 10H.5" />
                   </g>
                   <defs>
                     <clipPath id="a">
@@ -355,7 +364,7 @@
               <a type="button" class="button-sort" href="#">
                 <svg class="sort-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   width="12" height="10" fill="none" viewBox="0 0 12 10">
-                  <g clip-path="url(#a)" >
+                  <g clip-path="url(#a)">
                     <path d="M6 10 .5 0h11" />
                   </g>
                   <defs>

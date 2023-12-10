@@ -194,6 +194,10 @@ body {
   background-color: #FFE17F;
 }
 
+.form-input-catalog {
+  color: #000;
+}
+
 .navigation-submit {
   width: 158px;
   flex-grow: 1;
@@ -220,12 +224,20 @@ body {
   fill: #000;
 }
 
+/* меню входа в кабинет */
 .navigation-user-login {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 231px;
+}
+
+.button-exit {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
 }
 
 .navigation-user-menu {
@@ -1963,7 +1975,7 @@ input[type="email"]:invalid {
   display: flex;
   flex-direction: column;
   width: 1079px;
-  margin: 0 auto;
+  margin-left: 60px;
   margin-top: 35px;
   margin-bottom: 35px;
   padding: 0;
@@ -1995,13 +2007,14 @@ input[type="email"]:invalid {
   display: block;
   margin: 0;
   padding: 0;
+  padding-right: 2px;
 }
 
 .breadcrumbs-item:not(:last-child) {
   padding-right: 36px;
   background-image: url(../images/breadcrumbs.svg);
   background-repeat: no-repeat;
-  background-position: center right 16px;
+  background-position: center right 15px;
   background-size: 4px 7px;
 }
 
@@ -2050,12 +2063,13 @@ input[type="email"]:invalid {
   font-family: "Raleway";
   color: #000;
   font-size: 16px;
+  line-height: normal;
   letter-spacing: 3.2px;
   text-transform: uppercase;
 }
 
 .catalog-filter .catalog-filter-group {
-  margin-top: 35px;
+  margin-top: 34px;
 
 }
 
@@ -2070,12 +2084,24 @@ input[type="email"]:invalid {
 }
 
 .catalog-filter-title {
+  position: relative;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
+  letter-spacing: -0.36px;
   color: #000;
-  margin-top: 12px;
   padding: 0;
+  padding-top: 12px; 
+  padding-bottom: 20px;
+}
+
+.catalog-filter-title::before {
+  position: absolute;
+  content: " ";
+  width: 200px;
+  height: 2px;
+  background-color:  #000;
+  top: 0;
 }
 
 /* фильтр range-slider */
@@ -2083,8 +2109,16 @@ input[type="email"]:invalid {
   width: 200px;
   position: relative;
   height: 2px;
-  margin-bottom: 33px;
-  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 33px;
+  background-color: inherit;
+}
+
+.range-scale::before {
+  position: absolute;
+  content: " ";
+  width: 200px;
+  height: 2px;
   background-color: #DCDCDC;
 }
 
@@ -2118,13 +2152,13 @@ input[type="email"]:invalid {
 }
 
 .toggle-min {
-  top: -8px;
-  left: -6px;
+  top: -9px;
+  left: -9px;
 }
 
 .toggle-max {
-  top: -8px;
-  right: -6px;
+  top: -9px;
+  right: -7px;
 }
 
 .catalog-filter-labels {
@@ -2148,13 +2182,13 @@ input[type="email"]:invalid {
 }
 
 .world-beginning {
-  top: 9px;
-  left: -10px;
+  top: 12px;
+  left: -12px;
 }
 
 .world-end {
-  top: 9px;
-  right: 10px;
+  top: 12px;
+  right: 12px;
 }
 
 .range-inputs {
@@ -2169,13 +2203,13 @@ input[type="email"]:invalid {
 }
 
 .range-inputs-min {
-  top: 9px;
-  left: 0px;
+  top: 12px;
+  left: -5px;
 }
 
 .range-inputs-max {
-  top: 9px;
-  right: -50px;
+  top: 12px;
+  right: -44px;
 }
 
 .range-inputs::-webkit-outer-spin-button,
@@ -2186,15 +2220,31 @@ input[type="email"]:invalid {
 
 /* фильтр цвет, фильтр блютус*/
 .catalog-filter-list {
-  display: block;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin: 0;
-  margin-top: 20px;
   padding: 0;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.catalog-filter-list li:not(:last-child) {
+.catalog-filter-item {
+  width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.catalog-filter-list li.catalog-filter-item:not(:last-child) {
   margin-bottom: 17px;
+}
+
+.catalog-filter-list li.filter-item-bluetooth:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .control {
@@ -2206,12 +2256,13 @@ input[type="email"]:invalid {
 .control-mark {
   display: inline-block;
   position: absolute;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #000;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #CCCCCC;
   border-radius: 3px;
-  top: 4px;
+  top: 0;
   left: 0;
+  margin: auto 0;
 }
 
 .radio-mark {
@@ -2229,6 +2280,14 @@ input[type="email"]:invalid {
 
 .control-input:disabled + .control-mark {}*/
 
+.control-input[type="checkbox"]:checked+.control-mark {
+  border-color: #000;
+}
+
+.control-input[type="radio"]:checked+.control-mark {
+  border-color: #000;
+}
+
 .control-input[type="checkbox"]:checked+.control-mark::after {
   background-image: url(../images/tick-black.svg);
   background-repeat: no-repeat;
@@ -2237,26 +2296,28 @@ input[type="email"]:invalid {
   width: 10px;
   height: 10px;
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 3px;
+  left: 3px;
 }
 
 .control-input[type="radio"]:checked+.control-mark::after {
   position: absolute;
   content: " ";
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   background-color: #000;
-  top: 5px;
-  left: 5px;
+  top: 4px;
+  left: 4px;
   margin: auto 0;
   border-radius: 50%;
 }
 
+
 /* фильтр кнопка*/
 .button-show {
-  width: 210px;
+  width: 220px;
   border: none;
+  margin-top: 35px;
 }
 
 /* тело каталога*/
@@ -2272,6 +2333,7 @@ input[type="email"]:invalid {
 /* сортировка каталога */
 .catalog-sort {
   display: flex;
+  width: 760px;
   min-height: 30px;
   margin: 0;
   padding: 20px 40px;
@@ -2280,8 +2342,12 @@ input[type="email"]:invalid {
   align-items: center;
 }
 
+.catalog-sort .catalog-title {
+  padding: 0;
+}
+
 .sort {
-  width: 140px;
+  width: 143px;
   font-family: Rubik;
   font-size: 18px;
   font-style: normal;
@@ -2292,7 +2358,7 @@ input[type="email"]:invalid {
   background-color: #F0F0F0;
   background-image: url(../images/tick-sort.svg);
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: 110px center;
   padding-right: 30px;
 }
 
@@ -2307,7 +2373,17 @@ input[type="email"]:invalid {
   align-items: center;
 }
 
+.button-sort {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
 .sort-icon {
+  position: absolute;
+  top: 9px;
+  left: 9px;
   fill: #DCDCDC;
 }
 
@@ -2382,20 +2458,20 @@ input[type="email"]:invalid {
   margin: 0;
   padding: 0;
   color: #444;
+  line-height: normal;
 }
 
 /* пагинация каталога*/
 .catalog-pagination-more {
-  height: 61px;
   margin: 0 40px 44px;
-  padding: 18px 39px;
-  align-items: center;
+  padding: 15px 39px;
   background-color: #FFF;
   font-family: Raleway;
   font-size: 16px;
   line-height: normal;
   letter-spacing: 3.2px;
   text-transform: uppercase;
+  border: 3px solid #E5E5E5;
 }
 
 .catalog-pagination {
@@ -2415,7 +2491,13 @@ input[type="email"]:invalid {
   min-width: 128px;
   margin: 0;
   padding: 0;
+  color: #000;
 }
+
+.catalog-pagination-disabled {
+  color: rgba(68, 68, 68, 0.3);
+}
+
 
 .catalog-pagination-backward,
 .catalog-pagination-forward {
@@ -2439,12 +2521,29 @@ input[type="email"]:invalid {
   height: 40px;
 }
 
+.catalog-pagination-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 100%;
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
 .catalog-pagination-link {
   text-decoration: none;
   display: block;
-  width: 40px;
-  height: 40px;
   margin: 0;
   padding: 0;
   text-align: center;
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.catalog-pagination-current {
+  color: rgba(68, 68, 68, 0.6);
 }
