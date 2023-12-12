@@ -40,8 +40,6 @@
               <!-- до наведеня на форму поиска -->
               <input class="navigation-form-input" id="search-form" type="search" name="serch"
                 placeholder="Поиск по сайту">
-              <!-- после наведеня на форму поиска -->
-              <!--<input class="navigation-form-input" id="search-form" type="search"  name="serch" placeholder="Текст поиска">-->
               <button class="navigation-submit" type="submit">Найти</button>
             </form>
           </div>
@@ -647,71 +645,74 @@
       <section class="modal-delivery-content">
         <h2 class="modal-delivery-title">Доставка под заказ</h2>
         <form class="modal-delivery-form">
-          <p class="field-group">
-            <label class="delivery-form-labels" for="delivery-name">Ваше имя:</label>
-            <input class="delivery-form-field" type="text" id="delivery-name" name="delivery-name"
-              placeholder="Введите имя">
-          </p>
-          <p class="field-group">
-            <label class="delivery-form-labels" for="delivery-email">
-              Ваш e-mail:
-              <span class="error-message">Забавный у вас адрес</span>
-            </label>
-            <input class="delivery-form-field" type="email" id="delivery-email" name="delivery-email"
-              placeholder="почта">
-          </p>
-          <p class="field-group">
-            <label class="delivery-form-labels" for="delivery-content">Что нужно привезти:</label>
-            <input class="delivery-form-field" type="text" id="delivery-content" name="delivery-content"
-              placeholder="В свободной форме">
-          </p>
-
-          <div class="delivery-form-group">
-            <!-- Тултип -->
-            <div class="delivery-group-title">
-              <h3 class="delivery-group-title">Количество:</h3>
-              <span class="tooltip">
-                <button class="tooltip-toggle" type="button">
-                  <svg class="tooltip-icon" width="4" height="12" viewBox="0 0 4 12" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 0H1V2H3V0Z" fill="black" />
-                    <path d="M3 4H1V12H3V4Z" fill="black" />
-                  </svg>
-                </button>
-                <span class="tooltip-text">
-                  <span class="tooltip-decor"></span>
-                  Постараемся найти, сколько нужно. Привезем сколько получится по требованиям к провозу багажа.
-                </span>
-
-              </span>
-            </div>
-
-            <div class="delivery-group-count">
-              <label class="delivery-group-labels">
-                <button class="range-button button-minus" type="button">
-                  <svg class="button-icons-minus" width="60" height="60" viewBox="0 0 60 60" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <rect width="60" height="60" fill="#F0F0F0" />
-                    <path d="M38 29H22V31H38V29Z" fill="black" />
-                  </svg>
-                  <span class="visually-hidden">Уменьшать количество</span>
-                </button>
-                <input class="delivery-group-inputs" type="number" name="quantity" value="1">
-                <button class="range-button button-plus" type="button">
-                  <svg class="button-icons-plus" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_51420_655)">
-                      <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_51420_655">
-                        <rect width="16" height="16" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <span class="visually-hidden">Увеличивать количество</span>
-                </button>
+          <div class="modal-delivery-divs">
+            <p class="field-group-one">
+              <label class="delivery-form-labels" for="delivery-name">Ваше имя:</label>
+              <input class="delivery-form-field" type="text" id="delivery-name" name="delivery-name"
+                placeholder="Введите имя">
+            </p>
+            <p class="field-group-one">
+              <label class="delivery-form-labels" for="delivery-email">
+                Ваш e-mail:
+                <span class="error-message">Забавный у вас адрес</span>
               </label>
+              <input class="delivery-form-field" type="email" id="delivery-email" name="delivery-email"
+                placeholder="почта">
+            </p>
+          </div>
+          <div class="modal-delivery-divs">
+            <p class="field-group-two">
+              <label class="delivery-form-labels" for="delivery-content">Что нужно привезти:</label>
+              <input class="delivery-form-field" type="text" id="delivery-content" name="delivery-content"
+                placeholder="В свободной форме">
+            </p>
+            <div class="delivery-form-group">
+              <!-- Тултип -->
+              <div class="delivery-group-title">
+                <h3 class="delivery-group-title">Количество:</h3>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button">
+                    <svg class="tooltip-icon" width="4" height="12" viewBox="0 0 4 12" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 0H1V2H3V0Z" fill="black" />
+                      <path d="M3 4H1V12H3V4Z" fill="black" />
+                    </svg>
+                  </button>
+                  <span class="tooltip-text">
+                    <span class="tooltip-decor"></span>
+                    Постараемся найти, сколько нужно. Привезем сколько получится по требованиям к провозу багажа.
+                  </span>
+
+                </span>
+              </div>
+
+              <div class="delivery-group-count">
+                <label class="delivery-group-labels">
+                  <button class="range-button button-minus" type="button">
+                    <svg class="button-icons-minus" width="60" height="60" viewBox="0 0 60 60" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <rect width="60" height="60" fill="#F0F0F0" />
+                      <path d="M38 29H22V31H38V29Z" fill="black" />
+                    </svg>
+                    <span class="visually-hidden">Уменьшать количество</span>
+                  </button>
+                  <input class="delivery-group-inputs" type="number" name="quantity" value="1">
+                  <button class="range-button button-plus" type="button">
+                    <svg class="button-icons-plus" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_51420_655)">
+                        <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_51420_655">
+                          <rect width="16" height="16" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <span class="visually-hidden">Увеличивать количество</span>
+                  </button>
+                </label>
+              </div>
             </div>
           </div>
 

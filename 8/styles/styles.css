@@ -67,6 +67,7 @@ img {
 /* Body */
 body {
   margin: 0;
+  min-width: 1190px;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -475,8 +476,8 @@ body {
 /* ПОПОВЕР */
 .popover {
   position: absolute;
-  top: 40px;
-  right: -90px;
+  top: 36px;
+  right: -78px;
   z-index: 7;
   box-sizing: border-box;
   width: 320px;
@@ -504,7 +505,7 @@ body {
   background-image: url(../images/popover/triangle.svg);
   background-repeat: no-repeat;
   top: -6px;
-  right: 50%;
+  right: 152px;
 }
 
 /* поповер - контент */
@@ -591,7 +592,8 @@ body {
 }
 
 .popover-account-quantity {
-  min-width: 15px;
+  min-width: 20px;
+  text-align: center;
 }
 
 .popover-account-amount {
@@ -599,7 +601,8 @@ body {
 }
 
 .popover-account-currency {
-  width: 10px;
+  width: 15px;
+  text-align: center;
 }
 
 .popover-account-item {
@@ -616,9 +619,8 @@ body {
 }
 
 .popover-account-item:last-child {
-  width: 150px;
+  width: 130px;
   justify-content: end;
-  margin-right: 20px;
 }
 
 /* поповер-кнопка открытия */
@@ -950,7 +952,6 @@ body {
 }
 
 .category-item :focus {
-  background-color: #FFE17F;
   border: 2px solid #AF4FFF;
   outline: none;
 }
@@ -1181,8 +1182,12 @@ body {
   color: #000;
 }
 
-.delivery-rare :hover {
+.delivery-rare:hover .delivery-rare-image {
   background-color: #FFC700;
+}
+
+.delivery-rare:hover .devilery-link::before { 
+  background-color: #FFC700; 
 }
 
 .delivery-rare :focus {
@@ -1195,9 +1200,9 @@ body {
   opacity: 0.3;
 }
 
-.delivery-rare :hover .delivery-rare-icon {
+/*.delivery-rare :hover .delivery-rare-icon {
   background-color: #FFC700;
-}
+}*/
 
 .delivery-rare :focus .delivery-rare-icon {
   background-color: #FFE17F;
@@ -1679,7 +1684,7 @@ body {
 .modal {
   position: relative;
   margin: auto;
-  padding: 72px 80px;
+  padding: 62px 70px;
   background-color: #FFF;
   border: 10px solid #000;
   box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 0.10);
@@ -1695,8 +1700,8 @@ body {
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 72px;
-  right: 80px;
+  top: 62px;
+  right: 71px;
   width: 26px;
   height: 50px;
   background-color: #FFF;
@@ -1708,10 +1713,11 @@ body {
 }
 
 .modal-delivery-title {
+  width: 498px;
   position: relative;
-
   margin: 0;
   margin-bottom: 42px;
+  padding: 0;
   font-family: Raleway;
   font-size: 50px;
   font-weight: 800;
@@ -1724,30 +1730,46 @@ body {
   display: flex;
   height: 100%;
   flex-direction: column;
-
+  margin: 0;
+  padding: 0;
 }
 
 .modal-delivery-form {
   display: flex;
+  flex-direction: column;
   height: 100%;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
 }
 
-.field-group {
+.modal-delivery-divs {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-delivery-form .modal-delivery-divs:first-child {
+  margin-bottom: 17px;
+}
+
+.field-group-one,
+.field-group-two {
   display: flex;
   flex-direction: column;
   margin: 0;
+  padding: 0;
   justify-content: space-between;
 }
 
-p.field-group:not(:last-of-type) {
+.field-group-one {
   width: 360px;
   height: 94px;
+  
 }
 
-p.field-group:last-of-type {
+.field-group-two {
   width: 540px;
   height: 94px;
 }
@@ -1773,13 +1795,13 @@ p.field-group:last-of-type {
 .delivery-form-field[name="delivery-name"] {
   background-image: url(../images/icons_enter.svg);
   background-repeat: no-repeat;
-  background-position: 320px center;
+  background-position: 325px center;
 }
 
 .delivery-form-field[name="delivery-email"] {
   background-image: url(../images/icons_post.svg);
   background-repeat: no-repeat;
-  background-position: 320px center;
+  background-position: 325px center;
 }
 
 .delivery-form-labels {
@@ -1812,7 +1834,6 @@ p.field-group:last-of-type {
 }
 
 .delivery-group-title {
-  margin-bottom: 7px ;
   font-family: inherit;
   font-size: 18px;
   font-style: normal;
@@ -1820,6 +1841,8 @@ p.field-group:last-of-type {
   line-height: 20px;
   letter-spacing: -0.36px;
   color: #000;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .delivery-group-labels {
@@ -1852,7 +1875,7 @@ p.field-group:last-of-type {
 
 .button-icons-plus {
   position: absolute;
-  top: 20px;
+  top: 22px;
   right: 22px;
 
 }
@@ -1867,6 +1890,7 @@ p.field-group:last-of-type {
   font-weight: 400;
   line-height: 20px;
   color: #000;
+  text-align: center;
 }
 
 .delivery-group-inputs::-webkit-outer-spin-button,
@@ -1877,8 +1901,8 @@ p.field-group:last-of-type {
 
 .error-message {
   position: absolute;
-  top: 100px;
-  left: 0;
+  top: 95px;
+  left: 2px;
   color: #FF3D3D;
   font-family: inherit;
   font-size: 14px;
@@ -1893,8 +1917,8 @@ input[type="email"]:invalid {
 /* ТУЛТИП */
 .tooltip {
   position: absolute;
-  top: 290px;
-  right: 112px;
+  top: 308px;
+  right: 102px;
   margin-top: 0;
   width: 26px;
   height: 26px;
@@ -1925,8 +1949,8 @@ input[type="email"]:invalid {
 
 .tooltip-text {
   position: absolute;
-  top: 34px;
-  right: -52px;
+  top: 35px;
+  right: -32px;
   background-color: #000;
   box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 0.10);
   color: #FFF;
@@ -1935,10 +1959,8 @@ input[type="email"]:invalid {
   line-height: 20px;
   font-weight: 400;
   text-transform: none;
-  padding: 19px 17px 0 19px;
-  border-radius: 8px;
-  display: block;
-  width: 200px;
+  padding: 20px;
+  width: 160px;
   display: none;
 }
 
@@ -1948,8 +1970,8 @@ input[type="email"]:invalid {
   height: 6px;
   background-image: url(../images/popover/triangle.svg);
   background-repeat: no-repeat;
-  top: -6px;
-  left: 164px;
+  top: -5px;
+  left: 148px;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
