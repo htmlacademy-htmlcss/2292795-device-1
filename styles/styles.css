@@ -372,15 +372,6 @@ body {
   background-position: 30px 6px;
 }
 
-/*.navigation-icon  {
-  position: absolute;
-  top: -1px;
-  bottom: 0;
-  left: -2px;
-  margin: auto;
-  fill: #000;
-}*/
-
 .navigation-link-text {
   color: #000;
 }
@@ -418,10 +409,7 @@ body {
 
 .navigation-item .link-basket:focus {
   outline: 2px solid #AF4FFF;
-
 }
-
-
 
 
 /* ВЫПАДАЮЩЕЕ МЕНЮ */
@@ -447,7 +435,6 @@ body {
   letter-spacing: 3.6px;
   text-transform: uppercase;
   cursor: pointer;
-
 }
 
 .navigatiton-toggler-span {
@@ -466,6 +453,26 @@ body {
   position: absolute;
   top: 17px;
   right: 20px;
+  background-color: #FFE17F;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none ;
+  cursor: pointer;
+}
+
+.navigation-toggler-minus-plus {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #FFE17F;
+  background-image: url(../images/icons-navigation/icon-plus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  outline: none;
+  opacity: 0.3;
 }
 
 .navigation-toggler-image::after {
@@ -477,9 +484,30 @@ body {
   bottom: 0;
   height: 46px;
   width: 46px;
-  border: 2px solid rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(0, 0, 0, 1);
   border-radius: 50%;
+  opacity: 0.3;
 }
+
+.navigation-toggler-image:hover .navigation-toggler-minus-plus {
+  background-image: none;
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 1);
+  top: 7px;
+}
+
+.navigation-toggler-image:active .navigation-toggler-minus-plus,
+.navigation-toggler-image:active:after {
+  opacity: 1;
+}
+
+.navigation-catalog-toggler:focus-within {
+  outline: 2px solid #AF4FFF;
+}
+
 
 .navigation-toggler-menu {
   position: absolute;
