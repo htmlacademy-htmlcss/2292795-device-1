@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Каталог: Моноподы для селфи</title>
   <link href="styles/styles.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   <base href="https://htmlacademy-htmlcss.github.io/2292795-device-1/8/">
 </head>
 
@@ -23,45 +24,25 @@
       <nav class="main-navigation">
         <div class="navigation-menu-one">
           <div class="navigation-form">
-            <form class="forms" action="#" method="get">
-              <label class="navigation-form-label" for="search-form"></label>
-              <svg class="navigation-icon-form" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
-                width="16" height="17" fill="none" viewBox="0 0 16 17">
-                <g clip-path="url(#a)">
-                  <path fill="#000"
-                    d="m15.7 15-3.1-3.1A7 7 0 0 0 7 .7a7 7 0 0 0-7 7 7 7 0 0 0 11.2 5.6l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1a1 1 0 0 0-.3-.7ZM2 7.7a5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5Z" />
-                </g>
-                <defs>
-                  <clipPath id="a">
-                    <path fill="#fff" d="M0 .7h16v16H0z" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <!-- до наведеня на форму поиска -->
-              <!--<input class="navigation-form-input" id="search-form" type="search"  name="serch" placeholder="Поиск по сайту">-->
-              <!-- после наведеня на форму поиска -->
-              <input class="navigation-form-input form-input-catalog" id="search-form" type="search" name="serch"
-                placeholder="Текст поиска">
-              <button class="navigation-submit" type="submit">Найти</button>
+            <form class="search-field" action="https://echo.htmlacademy.ru/" method="get">
+              <label class="navigation-form-label">
+                <span class="visually-hidden">Поиск по сайту</span>
+                <!-- до наведеня на форму поиска -->
+                <!--<input class="navigation-form-input" id="search-form" type="search"  name="serch" placeholder="Поиск по сайту">-->
+                <!-- после наведеня на форму поиска -->
+                <input class="navigation-form-input form-input-catalog" id="search-form" type="text" name="serch"
+                  placeholder="Текст поиска">
+              </label>
+              <button class="navigation-submit" type="submit">
+                <span class="navigation-search-button"> Найти </span>
+              </button>
             </form>
           </div>
           <ul class="navigation-user-login">
             <li class="navigation-item">
               <a class="navigation-link link-login" href="#">
-                <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
-                  width="15" height="13" fill="none" viewBox="0 0 15 13">
-                  <g clip-path="url(#a)">
-                    <path fill="#000" d="M1 12.8h13a6.3 6.3 0 0 0-4.7-5.5c1-.6 1.7-1.7 1.7-3C11 2.3 9.4.8
-                  7.5.8A3.5 3.5 0 0 0 4 4.3c0 1.3.7 2.4 1.7 3A6.3 6.3 0 0 0 1 12.8Z" />
-                  </g>
-                  <defs>
-                    <clipPath id="a">
-                      <path fill="#fff" d="M0 .8h15v12H0z" />
-                    </clipPath>
-                  </defs>
-                </svg>
                 <!-- логин пользователя и кнопка Выйти -->
-                Коля Петухов
+                <span class="navigation-link-text">Коля Петухов</span>
               </a>
             </li>
             <li class="navigation-item">
@@ -71,37 +52,13 @@
           <ul class="navigation-user-menu">
             <li class="navigation-item">
               <a class="navigation-link link-liken" href="#">
-                <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
-                  width="10" height="13" fill="none" viewBox="0 0 10 13">
-                  <g fill="#000" clip-path="url(#a)">
-                    <path d="M6 .8H4v12h2V.8ZM2 4.8H0v8h2v-8ZM10 3.8H8v9h2v-9Z" />
-                  </g>
-                  <defs>
-                    <clipPath id="a">
-                      <path fill="#fff" d="M0 .8h10v12H0z" />
-                    </clipPath>
-                  </defs>
-                </svg>
-                Сравнить</a>
-            </li>
-            <li class="navigation-item">
-              <span class="navigation-basket-number">2</span>
+                <span class="navigation-link-text">Сравнить</span>
+              </a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link link-basket" href="#">
-                <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
-                  width="16" height="15" fill="none" viewBox="0 0 16 15">
-                  <g clip-path="url(#a)">
-                    <path fill="#000"
-                      d="m15.3 5.8-3.5.2-3.2-5L8 .9c-.2 0-.5 0-.6.3L4.2 6H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1 1.4 1h9.4c.7 0 1.2-.3 1.4-1l1.9-7v-.1c0-.4-.3-.8-.7-.8ZM8 2.7l2.2 3.2H5.9L8 2.7Z" />
-                  </g>
-                  <defs>
-                    <clipPath id="a">
-                      <path fill="#fff" d="M0 .8h16v14H0z" />
-                    </clipPath>
-                  </defs>
-                </svg>
-                <span class="basket-span"> Корзина</span>
+                <span class="navigation-basket-number">2</span>
+                <span class="navigation-link-text"> Корзина</span>
               </a>
 
               <!--Поповер-->
@@ -229,7 +186,7 @@
             <a class="breadcrumbs-link" href="#">Каталог товаров</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Моноподы для селфи</a>
+            <a class="breadcrumbs-link"href="#" aria-current="page">Моноподы для селфи</a>
           </li>
         </ul>
       </div>
@@ -292,7 +249,7 @@
 
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="blue">
+                  <input class="visually-hidden control-input" disabled type="checkbox" name="blue">
                   <span class="control-mark"></span>
                   <span class="control-label"> Синий </span>
                 </label>
@@ -321,14 +278,14 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item filter-item-bluetooth">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="Bluetooth" value="yes" checked>
+                  <input class="visually-hidden control-input"  type="radio" name="Bluetooth" value="yes" checked>
                   <span class="control-mark radio-mark"></span>
                   <span class="control-label"> Есть </span>
                 </label>
               </li>
               <li class="catalog-filter-item filter-item-bluetooth">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="Bluetooth" value="not">
+                  <input class="visually-hidden control-input" disabled type="radio" name="Bluetooth" value="not">
                   <span class="control-mark radio-mark"></span>
                   <span class="control-label"> Нет </span>
                 </label>
@@ -385,7 +342,7 @@
               <!--1-->
               <li class="product-card">
                 <a class="product-card-link" href="#">
-                  <img class="product-card-image" src="images/catalog_monopods/product-1.png" width="360" height="380"
+                  <img class="product-card-image" src="images/catalog-monopods/product-1.png" width="360" height="380"
                     alt="любительская селфи-палка">
                 </a>
                 <div class="product-card-text">
@@ -396,7 +353,7 @@
               <!--2-->
               <li class="product-card">
                 <a class="product-card-link" href="#">
-                  <img class="product-card-image" src="images/catalog_monopods/product-2.png" width="360" height="380"
+                  <img class="product-card-image" src="images/catalog-monopods/product-2.png" width="360" height="380"
                     alt="профессиональная селфи-палка ">
                 </a>
                 <div class="product-card-text">
@@ -407,7 +364,7 @@
               <!--3-->
               <li class="product-card">
                 <a class="product-card-link" href="#">
-                  <img class="product-card-image" src="images/catalog_monopods/product-3.png" width="360" height="380"
+                  <img class="product-card-image" src="images/catalog-monopods/product-3.png" width="360" height="380"
                     alt="непотопляемая селфи-палка">
                 </a>
                 <div class="product-card-text">
@@ -418,7 +375,7 @@
               <!--4-->
               <li class="product-card">
                 <a class="product-card-link" href="#">
-                  <img class="product-card-image" src="images/catalog_monopods/product-4.png" width="360" height="380"
+                  <img class="product-card-image" src="images/catalog-monopods/product-4.png" width="360" height="380"
                     alt="селфи-палка «Следуй за мной»">
                 </a>
                 <div class="product-card-text">
