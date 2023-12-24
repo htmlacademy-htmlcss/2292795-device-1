@@ -55,7 +55,7 @@
                 <span class="navigation-link-text">Сравнить</span>
               </a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navigation-item-popover">
               <a class="navigation-link link-basket" href="#">
                 <span class="navigation-basket-number">2</span>
                 <span class="navigation-link-text"> Корзина</span>
@@ -64,13 +64,15 @@
               <!--Поповер-->
               <div class="popover popover-cart">
                 <h2 class=" visually-hidden popover-title">Корзина</h2>
-                <!-- декоративная полосочка -->
+                <!-- декоративный элемент -->
                 <span class="popover-decor"></span>
                 <!-- поповер - контент -->
                 <div class="popover-content">
                   <ul class="popover-content-list">
                     <li class="popover-content-item">
-                      <span class="popover-content-span">Любительская<br> селфи-палка</span>
+                      <a class="popover-content-link" href="#">
+                        <span class="popover-content-span">Любительская<br> селфи-палка</span>
+                      </a>
                       <button class="popover-item-button" type="button">
                         <svg class="popover-item-imagne" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
                           focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none">
@@ -83,7 +85,9 @@
                       <span class="popover-item-line"></span>
                     </li>
                     <li class="popover-content-item">
-                      <span class="popover-content-span">Профессиональная селфи-палка</span>
+                      <a class="popover-content-link" href="#">
+                        <span class="popover-content-span">Профессиональная селфи-палка</span>
+                      </a>
                       <button class="popover-item-button" type="button">
                         <svg class="popover-item-imagne" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
                           focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none">
@@ -93,7 +97,7 @@
                         </svg>
                         <span class="visually-hidden">Удалить из корзины</span>
                       </button>
-                      <span class="popover-item-line"></span>
+                      <span class="popover-item-line item-line-disabled"></span>
                     </li>
                   </ul>
                 </div>
@@ -124,18 +128,9 @@
           <!--Выпадающее меню-->
           <div class="navigation-catalog-toggler">
             <span class="navigatiton-toggler-span">Каталог товаров</span>
-            <div class="navigation-toggler-image">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g opacity="0.3" clip-path="url(#clip0_51220_980)">
-                  <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_51220_980">
-                    <rect width="16" height="16" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
+            <button class="navigation-toggler-image">
+              <span class="navigation-toggler-minus-plus"></span>
+            </button>
             <ul class="navigation-toggler-menu">
               <li>
                 <a class="navigation-toggler-link" href="#">Виртуальная реальность</a>
@@ -345,6 +340,7 @@
                   <img class="product-card-image" src="images/catalog-monopods/product-1.png" width="360" height="380"
                     alt="любительская селфи-палка">
                 </a>
+                <button class="button product-card-button" type="button">Подробнее</button>
                 <div class="product-card-text">
                   <h4 class="product-card-title">Любительская <br>селфи-палка</h4>
                   <span class="product-card-price">500 ₽</span>
@@ -356,6 +352,7 @@
                   <img class="product-card-image" src="images/catalog-monopods/product-2.png" width="360" height="380"
                     alt="профессиональная селфи-палка ">
                 </a>
+                <button class="button product-card-button" type="button">Подробнее</button>
                 <div class="product-card-text">
                   <h4 class="product-card-title">Профессиональная <br>селфи-палка</h4>
                   <span class="product-card-price">1 500 ₽</span>
@@ -367,6 +364,7 @@
                   <img class="product-card-image" src="images/catalog-monopods/product-3.png" width="360" height="380"
                     alt="непотопляемая селфи-палка">
                 </a>
+                <button class="button product-card-button" type="button">Подробнее</button>
                 <div class="product-card-text">
                   <h4 class="product-card-title">Непотопляемая <br>селфи-палка</h4>
                   <span class="product-card-price">2 500 ₽</span>
@@ -378,6 +376,7 @@
                   <img class="product-card-image" src="images/catalog-monopods/product-4.png" width="360" height="380"
                     alt="селфи-палка «Следуй за мной»">
                 </a>
+                <button class="button product-card-button" type="button">Подробнее</button>
                 <div class="product-card-text">
                   <h4 class="product-card-title">Селфи-палка «Следуй <br>за мной»</h4>
                   <span class="product-card-price">1 500 ₽</span>
