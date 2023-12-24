@@ -56,7 +56,7 @@
                 <span class="navigation-link-text">Сравнить</span>
               </a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navigation-item-popover">
               <a class="navigation-link link-basket" href="#">
                 <span class="navigation-basket-number">2</span>
                 <span class="navigation-link-text"> Корзина</span>
@@ -65,13 +65,15 @@
               <!--Поповер-->
               <div class="popover popover-cart">
                 <h2 class=" visually-hidden popover-title">Корзина</h2>
-                <!-- декоративная полосочка -->
+                <!-- декоративный элемент -->
                 <span class="popover-decor"></span>
                 <!-- поповер - контент -->
                 <div class="popover-content">
                   <ul class="popover-content-list">
                     <li class="popover-content-item">
-                      <span class="popover-content-span">Любительская<br> селфи-палка</span>
+                      <a class="popover-content-link" href="#">
+                        <span class="popover-content-span">Любительская<br> селфи-палка</span>
+                      </a>
                       <button class="popover-item-button" type="button">
                         <svg class="popover-item-imagne" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
                           focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none">
@@ -84,7 +86,9 @@
                       <span class="popover-item-line"></span>
                     </li>
                     <li class="popover-content-item">
-                      <span class="popover-content-span">Профессиональная селфи-палка</span>
+                      <a class="popover-content-link" href="#">
+                        <span class="popover-content-span">Профессиональная селфи-палка</span>
+                      </a>
                       <button class="popover-item-button" type="button">
                         <svg class="popover-item-imagne" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
                           focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none">
@@ -94,7 +98,7 @@
                         </svg>
                         <span class="visually-hidden">Удалить из корзины</span>
                       </button>
-                      <span class="popover-item-line"></span>
+                      <span class="popover-item-line item-line-disabled"></span>
                     </li>
                   </ul>
                 </div>
@@ -130,7 +134,7 @@
             </button>
             <ul class="navigation-toggler-menu">
               <li class="navigation-toggler-item devaice">
-                <a class="navigation-toggler-link" href="#">Виртуальная реальность</a>
+                <a class="navigation-toggler-link toggler-link-current" href="#">Виртуальная реальность</a>
               </li>
               <li class="navigation-toggler-item devaice">
                 <a class="navigation-toggler-link" href="catalog_monopods.html">Моноподы для cелфи</a>
@@ -152,13 +156,13 @@
           <!--Сервисное меню-->
           <ul class="navigation-service-menu">
             <li class="navigation-service-item">
-              <a class="navigation-service-link" href="#" aria-current="false">Доставка</a>
+              <a class="navigation-service-link service-link-current" href="#">Доставка</a>
             </li>
             <li class="navigation-service-item">
-              <a class="navigation-service-link" href="#" aria-current="false">Гарантия</a>
+              <a class="navigation-service-link" href="#">Гарантия</a>
             </li>
             <li class="navigation-service-item">
-              <a class="navigation-service-link" href="#" aria-current="true">Контакты</a>
+              <a class="navigation-service-link" href="#">Контакты</a>
             </li>
           </ul>
         </div>
@@ -585,33 +589,28 @@
   <!-- Модальное окно -->
   <div class="modal-container modal-container-close">
     <div class="modal modal-delivery-rare">
-      <button class="modal-close-button">
+      <button class="modal-close-button" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
       <section class="modal-delivery-content">
         <h2 class="modal-delivery-title">Доставка под заказ</h2>
         <form class="modal-delivery-form">
-          <div class="modal-delivery-divs">
-            <p class="field-group-one">
-              <label class="delivery-form-labels" for="delivery-name">Ваше имя:</label>
-              <input class="delivery-form-field" type="text" id="delivery-name" name="delivery-name"
-                placeholder="Введите имя">
-            </p>
-            <p class="field-group-one">
-              <label class="delivery-form-labels" for="delivery-email">
-                Ваш e-mail:
-                <span class="error-message">Забавный у вас адрес</span>
-              </label>
-              <input class="delivery-form-field" type="email" id="delivery-email" name="delivery-email"
-                placeholder="почта">
-            </p>
+          <div class="modal-delivery-one">
+            <label class="delivery-form-labels">
+              <span class="form-lebels-text">Ваше имя:</span>
+              <input class="delivery-form-field" type="text" name="delivery-name" placeholder="Введите имя">
+            </label>
+            <label class="delivery-form-labels">
+              <span class="form-lebels-text">Ваш e-mail:</span>
+              <input class="delivery-form-field" type="email" name="delivery-email" placeholder="почта">
+              <span class="error-message">Забавный у вас адрес</span>
+            </label>
           </div>
-          <div class="modal-delivery-divs">
-            <p class="field-group-two">
-              <label class="delivery-form-labels" for="delivery-content">Что нужно привезти:</label>
-              <input class="delivery-form-field" type="text" id="delivery-content" name="delivery-content"
-                placeholder="В свободной форме">
-            </p>
+          <div class="modal-delivery-two">
+            <label class="delivery-form-labels">
+              <span class="form-lebels-text">Что нужно привезти:</span>
+              <input class="delivery-form-field" type="text" name="delivery-content" placeholder="В свободной форме">
+            </label>
             <div class="delivery-form-group">
               <!-- Тултип -->
               <div class="delivery-group-title">
@@ -633,14 +632,15 @@
               </div>
 
               <div class="delivery-group-count">
-                <label class="delivery-group-labels">
+                <label class="delivery-group-labels" for="quantity">
                   <button class="range-button button-minus" type="button">
                     <svg class="button-icons-minus" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M16 7H0V9H16V7Z"  />
                     </svg>
                     <span class="visually-hidden">Уменьшать количество</span>
                   </button>
-                  <input class="delivery-group-inputs" type="number" name="quantity" value="1">
+                  <input class="delivery-group-inputs" type="number" name="quantity" value="1" min="1" id="quantity">
+                  <span></span>
                   <button class="range-button button-plus" type="button">
                     <svg class="button-icons-plus" width="16" height="16" viewBox="0 0 16 16" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
@@ -659,7 +659,6 @@
               </div>
             </div>
           </div>
-
           <button class="button delivery-form-botton" type="post">Отправить</button>
         </form>
       </section>
