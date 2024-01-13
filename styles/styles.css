@@ -502,6 +502,7 @@ body {
 
 .navigation-catalog-toggler:focus-within {
   outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .navigation-toggler-menu {
@@ -512,7 +513,7 @@ body {
   background-color: #FFE17F;
   grid-template-columns: 200px 200px 200px;
   grid-template-rows: 25px 25px 25px;
-  margin-top: 1px;
+  margin-top: 3px;
   gap: 20px 40px;
   padding: 24px 0 0 60px;
   top: 100%;
