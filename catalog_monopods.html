@@ -43,7 +43,7 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="button-exit" type="button" href="#">Выйти</a>
+              <button class="button-exit" type="button">Выйти</button>
             </li>
           </ul>
           <ul class="navigation-user-menu">
@@ -201,24 +201,24 @@
             <legend class="catalog-filter-title">Стоимость</legend>
             <div class="range-scale">
               <div class="range-bar" style="left: 0px; width: 120px;">
-                <label class="catalog-filter-labels">
+                <label class="catalog-filter-labels visually-hidden" for="min-price">кнопка изменения минимальной цены</label>
                   <button class="range-toggle toggle-min" type="button">
                     <span class="visually-hidden">Изменить минимальную цену</span>
                   </button>
                   <span class="range-world world-beginning">от</span>
-                  <input class="range-inputs range-inputs-min" type="number" value="0" name="min-price"
+                  <input class="range-inputs range-inputs-min" type="number" value="0" name="min-price" id="min-price"
                     style="width: 28px; padding: 0 1px;">
                   <span class="decor-min" style="width: 34px;"></span>
-                </label>
-                <label class="catalog-filter-labels">
+                
+                <label class="catalog-filter-labels visually-hidden" for="max-price">кнопка изменения максимальной цены</label>
                   <button class="range-toggle toggle-max" type="button">
                     <span class="visually-hidden">Изменить максимальную цену</span>
                   </button>
                   <span class="range-world world-end">до</span>
-                  <input class="range-inputs range-inputs-max" type="number" value="5000" name="max-price"
+                  <input class="range-inputs range-inputs-max" type="number" value="5000" name="max-price" id="max-price"
                     style="width: 55px; padding: 0 8px;">
                   <span class="decor-max" style="width: 60px;"></span>
-                </label>
+                
               </div>
             </div>
           </fieldset>
@@ -301,7 +301,7 @@
               <option value="sort-link">Популярные</option>
             </select>
             <div class="catalog-sort-buttons">
-              <a type="button" class="button-sort" href="#">
+              <button type="button" class="button-sort">
                 <svg class="sort-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   width="12" height="10" viewBox="0 0 12 10">
                   <g clip-path="url(#a)">
@@ -314,8 +314,8 @@
                   </defs>
                 </svg>
                 <span class="visually-hidden">Сначала дешевле</span>
-              </a>
-              <a type="button" class="button-sort" href="#">
+              </button>
+              <button type="button" class="button-sort">
                 <svg class="sort-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   width="12" height="10" fill="none" viewBox="0 0 12 10">
                   <g clip-path="url(#b)">
@@ -328,7 +328,7 @@
                   </defs>
                 </svg>
                 <span class="visually-hidden">Сначала дороже</span>
-              </a>
+              </button>
             </div>
           </div>
           <h2 class="visually-hidden">Карточки моноподов для селфи</h2>
