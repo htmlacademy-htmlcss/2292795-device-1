@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <title>Интернет-магазин гаджетов для гиков "Девайс"</title>
   <link href="styles/styles.css" rel="stylesheet">
-  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
 </head>
 
 <body>
@@ -14,7 +15,7 @@
       <a class="logo" href="">
         <svg class="logo-header-icon" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" width="145" height="36" fill="none"
           viewBox="0 0 145 36">
-          <path fill="#000"
+          <path fill="#000000"
             d="M27.2 0v35.3h-7.6v-2.4a9.5 9.5 0 0 1-7.5 3.1C5.5 36 0 30.2 0 22.7 0 15.2 5.5 9.4 12.1 9.4c3.4 0 6 1.2 7.5
             3.1V0h7.6Zm-7.6 22.7c0-3.8-2.5-6.2-6-6.2s-6 2.4-6 6.2c0 3.8 2.5 6.2 6 6.2 3.5-.1 6-2.4 6-6.2ZM43.7 29.2c2.1
             0 3.8-.8 4.8-1.9l6.1 3.5a13 13 0 0 1-11 5.2c-8.6 0-14-5.8-14-13.3C29.6 15.2 35 9.4 43 9.4c7.4 0 12.8 5.7
@@ -36,30 +37,24 @@
               <label class="navigation-form-label">
                 <span class="visually-hidden">Поиск по сайту</span>
                 <input class="navigation-form-input" id="search-form" type="text" name="search"
-                  placeholder="Поиск по сайту">
+                  placeholder="Поиск по сайту" required>
               </label>
-              <button class="navigation-submit" type="submit">
-                <span class="navigation-search-button"> Найти </span>
-              </button>
+              <button class="navigation-submit" type="submit">Найти</button>
             </form>
           </div>
           <ul class="navigation-user-login">
             <li class="navigation-item">
-              <a class="navigation-link link-login" href="#">
-                <span class="navigation-link-text">Войти</span>
-              </a>
+              <a class="navigation-link link-login" href="#">Войти</a>
             </li>
           </ul>
           <ul class="navigation-user-menu">
             <li class="navigation-item">
-              <a class="navigation-link link-liken" href="#">
-                <span class="navigation-link-text">Сравнить</span>
-              </a>
+              <a class="navigation-link link-liken" href="#">Сравнить</a>
             </li>
             <li class="navigation-item navigation-item-popover">
               <a class="navigation-link link-basket" href="#">
+                Корзина
                 <span class="navigation-basket-number">2</span>
-                <span class="navigation-link-text"> Корзина</span>
               </a>
 
               <!--Поповер-->
@@ -117,7 +112,7 @@
                   </ul>
                 </div>
                 <!-- поповер-кнопка открытия -->
-                <button class="popover-open-button" type="submit">
+                <button class="popover-open-button" type="button">
                   <span class="popover-open-span">Открыть корзину</span>
                 </button>
 
@@ -134,7 +129,9 @@
             </button>
             <ul class="navigation-toggler-menu">
               <li class="navigation-toggler-item devaice">
-                <a class="navigation-toggler-link toggler-link-current" href="#">Виртуальная реальность</a>
+                <a class="navigation-toggler-link" href="#">Виртуальная реальность</a>
+                <!-- при добавлении состояния "активный пункт" добаляется класс: toggler-link-current, правила
+                css для него прописаны -->
               </li>
               <li class="navigation-toggler-item devaice">
                 <a class="navigation-toggler-link" href="catalog_monopods.html">Моноподы для cелфи</a>
@@ -404,13 +401,13 @@
           <!--услуги список-->
           <ul class="services-list">
             <li class="services-list-item">
-              <a class="button button-services-current" href="#">Доставка</a>
+              <button class="button button-services-current">Доставка</button>
             </li>
             <li class="services-list-item">
-              <a class="button" href="#">Гарантия</a>
+              <button class="button">Гарантия</button>
             </li>
             <li class="services-list-item">
-              <a class="button" href="#">Кредит</a>
+              <button class="button">Кредит</button>
             </li>
           </ul>
           <!--услуги описание-->
@@ -458,13 +455,7 @@
     <div class="conteiner-main">
       <section class="delivery-rare">
         <h2 class="visually-hidden">Заказ редкого товара</h2>
-        <a class="delivery-rare-button" href="#">
-          <div class="delivery-rare-image"></div>
-          <span class="delivery-rare-text">Доставим редкий товар под заказ</span>
-          <div class="delivery-rare-image delivery-image-inform">
-            <span class="circle-delivery"></span>
-          </div>
-        </a>
+        <a class="delivery-rare-button" href="#">Доставим редкий товар под заказ</a>
       </section>
       <!--О НАС КОНТАКТЫ-->
       <section class="about">
@@ -517,11 +508,11 @@
         </p>
       </div>
       <div class="subscription-block">
-        <form class="search-field" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="search-field-subscription" action="https://echo.htmlacademy.ru/" method="post">
           <label class="subscription-block-label" >
+            <input class="subscription-block-input" type="email" name="e-mail"
+              placeholder="Ваш e-mail" required>
             <span class="line-subscription"></span>
-            <input class="subscription-block-input" type="email" id="subscription-form" name="e-mail"
-              placeholder="Ваш e-mail">
           </label>
           <button class="subscription-submit" type="submit">Подписаться</button>
         </form>
@@ -534,7 +525,7 @@
       <a class="logo-footer" href="#">
         <svg class="logo-footer-icon" xmlns="http://www.w3.org/2000/svg" width="145" height="36" fill="none"
           viewBox="0 0 145 36">
-          <path fill="#FFC700"
+          <path fill="#ffc700"
             d="M27.2 0v35.3h-7.6v-2.4a9.5 9.5 0 0 1-7.5 3.1C5.5 36 0 30.2 0 22.7 0 15.2 5.5 9.4 12.1 9.4c3.4 0 6 1.2 7.5 3.1V0h7.6Zm-7.6 22.7c0-3.8-2.5-6.2-6-6.2s-6 2.4-6 6.2c0 3.8 2.5 6.2 6 6.2 3.5-.1 6-2.4 6-6.2ZM43.7 29.2c2.1 0 3.8-.8 4.8-1.9l6.1 3.5a13 13 0 0 1-11 5.2c-8.6 0-14-5.8-14-13.3C29.6 15.2 35 9.4 43 9.4c7.4 0 12.8 5.7 12.8 13.3 0 1.1 0 2.1-.3 3H37.6c1 2.6 3.3 3.5 6.1 3.5Zm4.6-9.1c-.8-2.9-3-4-5.4-4-2.9 0-4.8 1.4-5.5 4h11ZM82.2 10.1l-9.4 25.2h-8.6L55 10.1h8.4l5.3 16 5.4-16h8.2ZM83.5 10.1H91v25.2h-7.6V10.1ZM93.7 22.7A13 13 0 0 1 107 9.4a13 13 0 0 1 11.4 6.5l-6.6 3.8c-1-1.8-2.7-2.8-5-2.8a5.5 5.5 0 0 0-5.6 5.8c0 3.5 2.4 5.8 5.7 5.8 2.2 0 4-1.1 4.9-2.8l6.6 3.8A12.8 12.8 0 0 1 107 36a13 13 0 0 1-13.4-13.3ZM132.9 29.2c2 0 3.8-.8 4.8-1.9l6.1 3.5a13 13 0 0 1-11 5.2c-8.6 0-14-5.8-14-13.3a13 13 0 0 1 13.4-13.3c7.4 0 12.8 5.7 12.8 13.3 0 1.1-.1 2.1-.3 3h-18c1 2.6 3.4 3.5 6.2 3.5Zm4.7-9.1c-.8-2.9-3.1-4-5.4-4-3 0-4.8 1.4-5.5 4h10.9ZM83.5 0v10.1L91 0h-7.6Z" />
         </svg>
         <span class="visually-hidden">логотип компании девайс</span>

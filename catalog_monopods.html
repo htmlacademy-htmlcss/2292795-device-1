@@ -6,6 +6,7 @@
   <title>Каталог: Моноподы для селфи</title>
   <link href="styles/styles.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
 </head>
 
 <body>
@@ -14,7 +15,7 @@
       <a class="logo" href="index.html">
         <svg class="logo-header-icon" xmlns="http://www.w3.org/2000/svg" width="145" height="36" fill="none"
           viewBox="0 0 145 36">
-          <path fill="#000"
+          <path fill="#000000"
             d="M27.2 0v35.3h-7.6v-2.4a9.5 9.5 0 0 1-7.5 3.1C5.5 36 0 30.2 0 22.7 0 15.2 5.5 9.4 12.1 9.4c3.4 0 6 1.2 7.5 3.1V0h7.6Zm-7.6 22.7c0-3.8-2.5-6.2-6-6.2s-6 2.4-6 6.2c0 3.8 2.5 6.2 6 6.2 3.5-.1 6-2.4 6-6.2ZM43.7 29.2c2.1 0 3.8-.8 4.8-1.9l6.1 3.5a13 13 0 0 1-11 5.2c-8.6 0-14-5.8-14-13.3C29.6 15.2 35 9.4 43 9.4c7.4 0 12.8 5.7 12.8 13.3 0 1.1 0 2.1-.3 3H37.6c1 2.6 3.3 3.5 6.1 3.5Zm4.6-9.1c-.8-2.9-3-4-5.4-4-2.9 0-4.8 1.4-5.5 4h11ZM82.2 10.1l-9.4 25.2h-8.6L55 10.1h8.4l5.3 16 5.4-16h8.2ZM83.5 10.1H91v25.2h-7.6V10.1ZM93.7 22.7A13 13 0 0 1 107 9.4a13 13 0 0 1 11.4 6.5l-6.6 3.8c-1-1.8-2.7-2.8-5-2.8a5.5 5.5 0 0 0-5.6 5.8c0 3.5 2.4 5.8 5.7 5.8 2.2 0 4-1.1 4.9-2.8l6.6 3.8A12.8 12.8 0 0 1 107 36a13 13 0 0 1-13.4-13.3ZM132.9 29.2c2 0 3.8-.8 4.8-1.9l6.1 3.5a13 13 0 0 1-11 5.2c-8.6 0-14-5.8-14-13.3a13 13 0 0 1 13.4-13.3c7.4 0 12.8 5.7 12.8 13.3 0 1.1-.1 2.1-.3 3h-18c1 2.6 3.4 3.5 6.2 3.5Zm4.7-9.1c-.8-2.9-3.1-4-5.4-4-3 0-4.8 1.4-5.5 4h10.9Z" />
           <path fill="#510094" d="M83.5 0v10.1L91 0h-7.6Z" />
         </svg>
@@ -28,19 +29,14 @@
               <label class="navigation-form-label">
                 <span class="visually-hidden">Поиск по сайту</span>
                 <input class="navigation-form-input form-input-catalog" id="search-form" type="text" name="serch"
-                  placeholder="Текст поиска">
+                  placeholder="Текст поиска" required>
               </label>
-              <button class="navigation-submit" type="submit">
-                <span class="navigation-search-button"> Найти </span>
-              </button>
+              <button class="navigation-submit" type="submit"> Найти </button>
             </form>
           </div>
           <ul class="navigation-user-login">
             <li class="navigation-item">
-              <a class="navigation-link link-login" href="#">
-                <!-- логин пользователя и кнопка Выйти -->
-                <span class="navigation-link-text">Коля Петухов</span>
-              </a>
+              <a class="navigation-link link-login" href="#">Коля Петухов</a>
             </li>
             <li class="navigation-item">
               <button class="button-exit" type="button">Выйти</button>
@@ -48,14 +44,12 @@
           </ul>
           <ul class="navigation-user-menu">
             <li class="navigation-item">
-              <a class="navigation-link link-liken" href="#">
-                <span class="navigation-link-text">Сравнить</span>
-              </a>
+              <a class="navigation-link link-liken" href="#">Сравнить</a>
             </li>
             <li class="navigation-item navigation-item-popover">
               <a class="navigation-link link-basket" href="#">
+                Корзина
                 <span class="navigation-basket-number">2</span>
-                <span class="navigation-link-text"> Корзина</span>
               </a>
 
               <!--Поповер-->
@@ -113,7 +107,7 @@
                   </ul>
                 </div>
                 <!-- поповер-кнопка открытия -->
-                <button class="popover-open-button" type="submit">
+                <button class="popover-open-button" type="button">
                   <span class="popover-open-span">Открыть корзину</span>
                 </button>
 
@@ -129,22 +123,24 @@
               <span class="navigation-toggler-minus-plus"></span>
             </button>
             <ul class="navigation-toggler-menu">
-              <li>
+              <li class="navigation-toggler-item devaice">
                 <a class="navigation-toggler-link" href="#">Виртуальная реальность</a>
+                <!-- при добавлении состояния "активный пункт" добаляется класс: toggler-link-current, правила
+                css для него прописаны -->
               </li>
-              <li>
+              <li class="navigation-toggler-item devaice">
                 <a class="navigation-toggler-link" href="catalog_monopods.html">Моноподы для cелфи</a>
               </li>
-              <li>
+              <li class="navigation-toggler-item devaice">
                 <a class="navigation-toggler-link" href="#">Экшн-камеры</a>
               </li>
-              <li>
+              <li class="navigation-toggler-item gadget">
                 <a class="navigation-toggler-link" href="#">Фитнес-браслеты</a>
               </li>
-              <li>
+              <li class="navigation-toggler-item gadget">
                 <a class="navigation-toggler-link" href="#">Умные часы</a>
               </li>
-              <li>
+              <li class="navigation-toggler-item robot">
                 <a class="navigation-toggler-link" href="#">Квадрокоптеры</a>
               </li>
             </ul>
@@ -201,24 +197,25 @@
             <legend class="catalog-filter-title">Стоимость</legend>
             <div class="range-scale">
               <div class="range-bar" style="left: 0px; width: 120px;">
-                <label class="catalog-filter-labels visually-hidden" for="min-price">кнопка изменения минимальной цены</label>
-                  <button class="range-toggle toggle-min" type="button">
-                    <span class="visually-hidden">Изменить минимальную цену</span>
-                  </button>
-                  <span class="range-world world-beginning">от</span>
-                  <input class="range-inputs range-inputs-min" type="number" value="0" name="min-price" id="min-price"
-                    style="width: 28px; padding: 0 1px;">
-                  <span class="decor-min" style="width: 34px;"></span>
-                
-                <label class="catalog-filter-labels visually-hidden" for="max-price">кнопка изменения максимальной цены</label>
-                  <button class="range-toggle toggle-max" type="button">
-                    <span class="visually-hidden">Изменить максимальную цену</span>
-                  </button>
-                  <span class="range-world world-end">до</span>
-                  <input class="range-inputs range-inputs-max" type="number" value="5000" name="max-price" id="max-price"
-                    style="width: 55px; padding: 0 8px;">
-                  <span class="decor-max" style="width: 60px;"></span>
-                
+                <label class="catalog-filter-labels visually-hidden" for="button-min-price">кнопка изменения минимальной
+                  цены</label>
+                <button class="range-toggle toggle-min" type="button" id="button-min-price">
+                  <span class="visually-hidden">Изменить минимальную цену</span>
+                </button>
+                <label class="range-world world-beginning" for="min-price">от</label>
+                <input class="range-inputs range-inputs-min" type="number" value="0" name="min-price" id="min-price"
+                  style="width: 28px; padding: 0 1px;">
+                <span class="decor-min" style="width: 34px;"></span>
+
+                <label class="catalog-filter-labels visually-hidden" for="button-max-price">кнопка изменения
+                  максимальной цены</label>
+                <button class="range-toggle toggle-max" type="button" id="button-max-price">
+                  <span class="visually-hidden">Изменить максимальную цену</span>
+                </button>
+                <label class="range-world world-end" for="max-price">до</label>
+                <input class="range-inputs range-inputs-max" type="number" value="5000" name="max-price" id="max-price"
+                  style="width: 55px; padding: 0 8px;">
+                <span class="decor-max" style="width: 60px;"></span>
               </div>
             </div>
           </fieldset>
@@ -323,7 +320,7 @@
                   </g>
                   <defs>
                     <clipPath id="b">
-                      <path fill="#fff" d="M11.5 10H.5V0h11z" />
+                      <path fill="#ffffff" d="M11.5 10H.5V0h11z" />
                     </clipPath>
                   </defs>
                 </svg>
@@ -331,7 +328,7 @@
               </button>
             </div>
           </div>
-          <h2 class="visually-hidden">Карточки моноподов для селфи</h2>
+          <h3 class="visually-hidden">Карточки моноподов для селфи</h3>
           <div class="catalog-list">
             <!--карточки каталога-->
             <ul class="product-list">
@@ -388,9 +385,7 @@
             <!--пагинация каталога-->
             <button class="catalog-pagination-more" type="button">Загрузить ещЁ</button>
             <div class="catalog-pagination">
-              <a class="catalog-pagination-prev catalog-pagination-current">
-                <span class="catalog-pagination-span">Назад</span>
-              </a>
+              <a class="catalog-pagination-prev catalog-pagination-current" href="#">Назад</a>
               <ul class="catalog-pagination-numbers">
                 <li class="catalog-pagination-item">
                   <a class="catalog-pagination-link catalog-link-current">1</a>
@@ -408,9 +403,7 @@
                   <a class="catalog-pagination-link" href="#">15</a>
                 </li>
               </ul>
-              <a class="catalog-pagination-next" href="#">
-                <span class="catalog-pagination-span">Вперёд</span>
-              </a>
+              <a class="catalog-pagination-next" href="#">Вперёд</a>
             </div>
           </div>
         </div>
@@ -422,7 +415,7 @@
       <a class="logo-footer" href="index.html">
         <svg class="logo-footer-icon" xmlns="http://www.w3.org/2000/svg" width="145" height="36" fill="none"
           viewBox="0 0 145 36">
-          <path fill="#FFC700"
+          <path fill="#ffc700"
             d="M27.2 0v35.3h-7.6v-2.4a9.5 9.5 0 0 1-7.5 3.1C5.5 36 0 30.2 0 22.7 0 15.2 5.5 9.4 12.1 9.4c3.4 0 6 1.2 7.5 3.1V0h7.6Zm-7.6 22.7c0-3.8-2.5-6.2-6-6.2s-6 2.4-6 6.2c0 3.8 2.5 6.2 6 6.2 3.5-.1 6-2.4 6-6.2ZM43.7 29.2c2.1 0 3.8-.8 4.8-1.9l6.1 3.5a13 13 0 0 1-11 5.2c-8.6 0-14-5.8-14-13.3C29.6 15.2 35 9.4 43 9.4c7.4 0 12.8 5.7 12.8 13.3 0 1.1 0 2.1-.3 3H37.6c1 2.6 3.3 3.5 6.1 3.5Zm4.6-9.1c-.8-2.9-3-4-5.4-4-2.9 0-4.8 1.4-5.5 4h11ZM82.2 10.1l-9.4 25.2h-8.6L55 10.1h8.4l5.3 16 5.4-16h8.2ZM83.5 10.1H91v25.2h-7.6V10.1ZM93.7 22.7A13 13 0 0 1 107 9.4a13 13 0 0 1 11.4 6.5l-6.6 3.8c-1-1.8-2.7-2.8-5-2.8a5.5 5.5 0 0 0-5.6 5.8c0 3.5 2.4 5.8 5.7 5.8 2.2 0 4-1.1 4.9-2.8l6.6 3.8A12.8 12.8 0 0 1 107 36a13 13 0 0 1-13.4-13.3ZM132.9 29.2c2 0 3.8-.8 4.8-1.9l6.1 3.5a13 13 0 0 1-11 5.2c-8.6 0-14-5.8-14-13.3a13 13 0 0 1 13.4-13.3c7.4 0 12.8 5.7 12.8 13.3 0 1.1-.1 2.1-.3 3h-18c1 2.6 3.4 3.5 6.2 3.5Zm4.7-9.1c-.8-2.9-3.1-4-5.4-4-3 0-4.8 1.4-5.5 4h10.9ZM83.5 0v10.1L91 0h-7.6Z" />
         </svg>
         <span class="visually-hidden">логотип компании девайс</span>
@@ -451,7 +444,7 @@
               <a class="media-link" href="https://t.me/htmlacademy">
                 <svg class="media-icon teligram-icon" aria-hidden="true" focusable="false"
                   xmlns="http://www.w3.org/2000/svg" width="14" height="12" fill="none" viewBox="0 0 14 12">
-                  <path fill="#444"
+                  <path fill="#444444"
                     d="M12.443.074.623 4.632c-.807.324-.802.774-.148.974l3.035.947 7.021-4.43c.332-.202.635-.093.386.128L5.228 7.385l-.209 3.129c.307 0 .442-.141.614-.307l1.474-1.433 3.066 2.264c.565.312.971.152 1.112-.523l2.013-9.485c.206-.826-.316-1.2-.855-.956Z" />
                 </svg>
                 <span class="visually-hidden">мы в телеграм канале</span>
@@ -461,7 +454,7 @@
               <a class="media-link" href="https://www.youtube.com/user/htmlacademyru">
                 <svg class="media-icon youtube-icon" aria-hidden="true" focusable="false"
                   xmlns="http://www.w3.org/2000/svg" width="16" height="11" fill="none" viewBox="0 0 16 11">
-                  <path fill="#444"
+                  <path fill="#444444"
                     d="M15.667 1.675a1.857 1.857 0 0 0-.51-.847 2.034 2.034 0 0 0-.893-.495c-1.252-.33-6.268-.33-6.268-.33a51.083 51.083 0 0 0-6.26.314 2.107 2.107 0 0 0-.892.506c-.246.238-.425.53-.518.851A19.393 19.393 0 0 0 0 5.337C-.008 6.564.101 7.79.326 8.999c.091.32.27.611.516.846.248.236.556.406.894.496 1.27.329 6.26.329 6.26.329 2.094.024 4.188-.08 6.268-.313.335-.087.642-.257.892-.495.244-.23.42-.524.51-.847.23-1.207.342-2.434.334-3.663a17.72 17.72 0 0 0-.333-3.678ZM6.402 7.619V3.055l4.173 2.282L6.402 7.62Z" />
                 </svg>
                 <span class="visually-hidden">мы на ютюбе</span>
@@ -471,7 +464,7 @@
               <a class="media-link" href="https://twitter.com/htmlacademy_ru">
                 <svg class="media-icon twitter-icon" aria-hidden="true" focusable="false"
                   xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 15 15">
-                  <path fill="#444"
+                  <path fill="#444444"
                     d="M9.7.155c1.5-.5 2.6.3 3.2 1.1.5-.2 1.1-.4 1.7-.6 0 .8-.5 1.4-.8 1.6.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4c-.3 0-3.7-.4-4.3-1.8 2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2-1.1-.8-2.3-1.5-2.2-3.5.3.3.9.5 1.2.4-.6-.2-1.8-3.1-.8-4.6 1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z" />
                 </svg>
                 <span class="visually-hidden">мы в твиттере</span>
